@@ -1,6 +1,6 @@
 every wed 2pm
 DTSTART:{ref + relativedelta(weekday=WE(1))}T140000
-RRULE:FREQ=WEEKLY;BYDAY=WE;BYHOUR=14;BYMINUTE=00;BYSECOND=00
+RRULE:FREQ=WEEKLY;BYDAY=WE;
 
 thursday in 2 weeks
 DTSTART:{ref + relativedelta(weeks=2, weekday=TH(1))}
@@ -8,11 +8,9 @@ DTSTART:{ref + relativedelta(weeks=2, weekday=TH(1))}
 wed 1st oct
 DTSTART:{ref + relativedelta(day=1, month=10, weekday=WE(1))}
 
-
 2-3:30pm last fri of month
 DTSTART:{ref + relativedelta(day=31, weekday=FR(-1))}T140000
 DTEND:{ref + relativedelta(day=31, weekday=FR(-1))}T153000
-
 
 5-6pm tuesday
 DTSTART:{ref + relativedelta(weekday=TU(1))}T170000
@@ -35,11 +33,15 @@ RRULE:FREQ=WEEKLY;BYDAY=MO,WE,SA
 
 
 next sat, mon, wed 905-1330
-DTSTART:{ref + relativedelta(weekday=SA(1))}T090500
-DTEND:{ref + relativedelta(weekday=SA(1))}T133000
+DTSTART:{ref + relativedelta(weekday=MO) + relativedelta(weekday=SA)}T090500
+DTEND:{ref + relativedelta(weekday=MO) + relativedelta(weekday=SA)}T133000
 DURATION:PT3H
-RDATE:{ref + relativedelta(weekday=MO(1))}T090500
-RDATE:{ref + relativedelta(weekday=WE(1))}T090500
+RDATE:{ref + relativedelta(weekday=MO) + 0}T090500
+RDATE:{ref + relativedelta(weekday=MO) + relativedelta(weekday=WE)}T090500
+
+
+next mon
+DTSTART:{ref + relativedelta(weekday=MO) + 0}
 
 
 16/08 1245-4pm
@@ -60,7 +62,7 @@ in 2 days at 10am
 DTSTART:{ref + relativedelta(days=2)}T100000
 
 next tuesday
-DTSTART:{ref + relativedelta(weekday=TU(2 if ref.weekday() < TUESDAY else 1))}
+DTSTART:{ref + relativedelta(weekday=MO) + relativedelta(weekday=TU)}
 
 
 first mon of feb
@@ -134,8 +136,66 @@ thurs in 2 weeks
 DTSTART:{ref + relativedelta(weekday=TH(2))}
 
 
+next weekday
+DTSTART:{ref + relativedelta( weekday = MO if ref.weekday() >= FRIDAY else None, days = 1 if ref.weekday() < FRIDAY else 0)}
+
+weekdays 2-4pm
+DTSTART:{ref + relativedelta( weekday = MO if ref.weekday() >= FRIDAY else None, days = 1 if ref.weekday() < FRIDAY else 0)}T140000
+DTEND:{ref + relativedelta( weekday = MO if ref.weekday() >= FRIDAY else None, days = 1 if ref.weekday() < FRIDAY else 0)}T160000
+RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR
+
+every fri 2pm except next week
+DTSTART:{ref + relativedelta(weekday=FR(1))}T140000
+RRULE:FREQ=WEEKLY;BYDAY=FR;EXDATE:{ref + relativedelta(weekday=FR(+2 if ref.weekday() < FRIDAY else +1))}
+
+hourly from 9am to 5pm weekdays
+DTSTART:{ref + relativedelta( weekday = MO if ref.weekday() >= FRIDAY else None, days = 1 if ref.weekday() < FRIDAY else 0)}T090000
+RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR={range(9, 17)}
+
+1wk from now
+DTSTART:{ref + relativedelta(weeks=1)}
+
+2wk thursday 10am
+DTSTART:{ref + relativedelta(weekday=TH(1), weeks=2)}T100000
+
+tmrw 10am
+DTSTART:{ref + relativedelta(days=1)}T100000
+
+next week
+DTSTART:{ref + relativedelta(weekday=MO(1))}
+
+14/06
+DTFORMAT: en-UK
+DTSTART:{ref + relativedelta(day=14, month=6)}
+
+noon
+DTSTART:{ref + relativedelta(hour=12)}
 
 
+12/30 noon
+DTFORMAT: en-US
+DTSTART:{ref + relativedelta(day=30, month=12)}T120000
+
+
+noon fri
+DTSTART:{ref + relativedelta(weekday=FR(1))}T120000
+
+1230
+DTSTART:{ref + relativedelta(hour=12, minute=30)}
+
+Q1 26
+DTSTART:{datetime(2026, 1,1) + relativedelta(weekday=MO)}
+
+Q4
+DTSTART:{ref + relativedelta(month=10, weekday=MO)}
+
+Q2 2029
+DTSTART:{datetime(2029, 4,1) + relativedelta(weekday=MO)}
+
+
+weekdays minus thurs
+DTSTART:{ref + relativedelta( weekday = MO|TU|WE|FR)}
+RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,FR;
 
 
 
