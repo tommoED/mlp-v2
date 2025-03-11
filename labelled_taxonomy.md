@@ -278,7 +278,7 @@ RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYMINUTE=0,15,30,45
 
 1033 then every 20m until 5pm weekdays
 DTSTART:{ref + relativedelta( weekday = MO|TU|WE|TH|FR)}T103300
-RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR={range(10, 18)};BYMINUTE=13,33,53;
+RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR={range(10, 17)};BYMINUTE=13,33,53;
 # the kings building bus schedule
 
 in 10m
