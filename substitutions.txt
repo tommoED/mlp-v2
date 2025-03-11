@@ -1,0 +1,13 @@
+weekday = MO|TU|WE|TH|FR
+weekday = MO if ref.weekday() >= FRIDAY else None, days = 1 if ref.weekday() < FRIDAY else 0
+
+weekday = SA|SU
+weekday = SA if ref.weekday() != SATURDAY else None, days = 1 if ref.weekday() == SATURDAY else 0
+
+
+quarter = n
+month=((((ref.month - 1) // 3 + n) * 3 + 1)) % 12
+
+
+VALARM:(TRIGGER:.*)
+BEGIN:VALARM\n$1\nACTION=DISPLAY\nEND:VALARM
