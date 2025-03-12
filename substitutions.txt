@@ -1,3 +1,9 @@
+# Substitutions
+
+These are some rules that could be used in case the model struggles
+with the harder expressions.
+----------------
+
 next one of set
 relativedelta((days = 2) if ref.weekday == THURSDAY else (days=1) if ref.weekday < SATURDAY else (weekday=MO)
 
