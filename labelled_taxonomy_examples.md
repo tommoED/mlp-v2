@@ -1,3 +1,90 @@
+# Taxonomy examples
+## Structure:
+
+*Extra context*
+phrase
+iCal fields
+*# Note*
+
+## Contents
+### SIMPLE RELATIVE EXPRESSIONS
+in 2 days
+in 2 days at 10am
+next mon
+next week
+in 4hrs
+2 weeks today
+1wk from now
+tmrw 10am
+noon
+1230
+
+### RECURRING RULES (RRULE)
+every wed 2pm
+every weekday 9am-10am
+1030 mon, wed & sat 3h
+every 10 minutes between 2 and 7pm
+every christmas eve
+every 3rd sat of month 9am
+every other sat 10-12pm
+
+### TIME RANGES
+2-3:30pm last fri of month
+5-6pm tuesday
+from 6 til 8pm
+nov 6-8
+fri night 8pm till 10:30
+
+### COMBINATION EXPRESSIONS
+weekdays minus thursday
+thursdays, mondays and saturdays
+weekends and wednesdays
+every tues except last week of month
+last workday of every month 10am
+
+### ABSOLUTE DATE EXPRESSIONS
+wed 1st oct
+3rd june
+june 3
+halloween 9pm
+christmas eve 2pm
+
+### DURATION-BASED
+tuesday 10am for 2h
+for 1hr
+for 1.5hrs
+last sun feb 0800 2hrs
+
+### TIME ZONE EXPRESSIONS
+2:38pm in hawaii
+8pm EST
+9:19am madrid time
+GMT+1 1200
+1745+0800
+
+### ALARM/REMINDER EXPRESSIONS
+remind 30m before 10am
+aug 9th 7pm rem 1hr
+sat 9am, sun 10am, tue 330pm remind 15m before
+
+### SPECIAL CASES
+first mon of next quarter
+fiscal week 32 wed 1530
+Q2 w3 tuesday 10am
+sem 1 week 3 tues 1010
+
+### COMPLEX CONDITIONAL LOGIC
+next weekday
+weekends 10am-12pm
+every 15 minutes from 1600-1800 on weekdays
+every 2nd weekday
+
+
+
+## Examples
+--------------------------------
+
+
 every wed 2pm
 DTSTART:{ref + relativedelta(weekday=WE(1))}T140000
 RRULE:FREQ=WEEKLY;BYDAY=WE;
@@ -39,11 +126,11 @@ RDATE:{ref + relativedelta(weekday=MO) + relativedelta(weekday=WE)}T090500
 # we assume next week means the week commencing the next monday
 
 next mon
-DTSTART:{ref + relativedelta(weekday=MO) + 0}
-# monday is always the start of the week
+DTSTART:{ref + relativedelta(days=1, weekday=MO)}
+# 'next' mon implies monday starting next week, so we add 1 day to the reference time in the case we are already on a monday
 
 next week
-DTSTART:{ref + relativedelta(weekday=MO)}
+DTSTART:{ref + relativedelta(days=1, weekday=MO)}
 
 DTFORMAT: en-UK
 16/08 1245-4pm
@@ -63,10 +150,11 @@ in 2 days at 10am
 DTSTART:{ref + relativedelta(days=2)}T100000
 
 next tuesday
-DTSTART:{ref + relativedelta(weekday=MO) + relativedelta(weekday=TU)}
+DTSTART:{ref + relativedelta(days=1, weekday=MO) + relativedelta(weekday=TU)}
 
 first mon of feb
 DTSTART:{ref + relativedelta(month=2, weekday=MO(1))}
+
 
 3rd june
 DTSTART:{ref + relativedelta(day=3, month=6)}
@@ -116,7 +204,7 @@ DTSTART:{ref + relativedelta(month=1, day=1)}T090000
 RRULE:FREQ=DAILY
 
 next week friday 445pm
-DTSTART:{ref + relativedelta(weekday=FR(1))}T164500
+DTSTART:{ref + relativedelta(days=1, weekday=MO) + relativedelta(weekday=FR)}T164500
 
 in 2 weeks 4 days
 DTSTART:{ref + relativedelta(weeks=2, days=4)}
@@ -125,30 +213,31 @@ DTSTART:{ref + relativedelta(weeks=2, days=4)}
 DTSTART:{ref + relativedelta(weeks=2)}
 
 monday next week
-DTSTART:{ref + relativedelta(weekday=MO(1))}
+DTSTART:{ref + relativedelta(days=1, weekday=MO)}
 
 thurs in 2 weeks
-DTSTART:{ref + relativedelta(weekday=TH(2))}
+DTSTART:{ref + relativedelta(days=1, weekday=MO) + relativedelta(weekday=TH(2))}
 
 next weekday
-DTSTART:{ref + relativedelta( weekday = MO|TU|WE|TH|FR)}
+DTSTART:{ref + relativedelta( (days=1) if ref.weekday == SA else (weekday=SA))}
 
 weekdays 2-4pm
-DTSTART:{ref + relativedelta( weekday = MO|TU|WE|TH|FR)}T140000
-DTEND:{ref + relativedelta( weekday = MO|TU|WE|TH|FR)}T160000
+DTSTART:{ref + relativedelta( (days=1) if ref.weekday == SA else (weekday=SA))}T140000
+DTEND:{ref + relativedelta( (days=1) if ref.weekday == SA else (weekday=SA))}T160000
 RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR
 
 every fri 2pm except next week
-DTSTART:{ref + relativedelta(weekday=FR)}T140000
-RRULE:FREQ=WEEKLY;BYDAY=FR;EXDATE:{ref + relativedelta(weekday=MO) + relativedelta(weekday=FR)}
+DTSTART:{ref + relativedelta( (days=1) if ref.weekday == SA else (weekday=SA))}T140000
+RRULE:FREQ=WEEKLY;BYDAY=FR;EXDATE:{ref + relativedelta(days=1, weekday=MO) + relativedelta(weekday=FR)}
 
 hourly from 9am to 5pm weekdays
-DTSTART:{ref + relativedelta( weekday = MO|TU|WE|TH|FR)}T090000
+DTSTART:{ref + relativedelta( (days=1) if ref.weekday == SA else (weekday=SA))}T090000
 RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR={range(9, 17)}
 
 weekends 10am-12pm
-DTSTART:{ref + relativedelta(weekday=SA|SU)}T100000
-DTEND:{ref + relativedelta(weekday=SA|SU)}T120000
+DTSTART:{ref + relativedelta((days=1) if ref.weekday == SA else (weekday=SA))}T100000
+DTEND:{ref + relativedelta((days=1) if ref.weekday == SA else (weekday=SA))}T120000
+# we can use != to exclude a day, otherwise add 1 day
 
 1wk from now
 DTSTART:{ref + relativedelta(weeks=1)}
@@ -160,7 +249,7 @@ tmrw 10am
 DTSTART:{ref + relativedelta(days=1)}T100000
 
 next week
-DTSTART:{ref + relativedelta(weekday=MO(1))}
+DTSTART:{ref + relativedelta(days=1, weekday=MO)}
 
 
 DTFORMAT: en-UK
@@ -190,16 +279,91 @@ DTSTART:{ref + relativedelta(month=10, weekday=MO)}
 Q2 2029
 DTSTART:{datetime(2029, 4,1) + relativedelta(weekday=MO)}
 
-weekdays minus thurs
-DTSTART:{ref + relativedelta( weekday = MO|TU|WE|FR)}
-RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,FR;
+weekdays minus thursday
+DTSTART:{ref + relativedelta(**(
+    {'days': 2} if ref.weekday() == WEDNESDAY else
+    {'days': 1} if ref.weekday() < SATURDAY else
+    {'weekday': MO }
+))}
+RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,FR
+
+thursdays, mondays and saturdays
+DTSTART:{ref + relativedelta(**(
+    {'weekday': TH} if ref.weekday() < THURSDAY else
+    {'weekday': SA} if ref.weekday() < SATURDAY else
+    {'weekday': MO}
+))}
+RRULE:FREQ=WEEKLY;BYDAY=MO,TH,SA
+
+weekends and wednesdays
+DTSTART:{ref + relativedelta(**(
+    {'weekday': WE} if ref.weekday() < WEDNESDAY else
+    {'weekday': SA} if ref.weekday() < SATURDAY else
+    {'weekday': SU} if ref.weekday() < SUNDAY else
+    {'weekday': WE}
+))}
+RRULE:FREQ=WEEKLY;BYDAY=WE,SA,SU
+
+every tues and every other mon
+DTSTART:{ref + relativedelta(**(
+    {'weekday': TU} if ref.weekday() < TUESDAY else
+    {'weekday': MO} if ref.weekday() < MONDAY else
+    {'weekday': TU}
+))}
+RRULE:FREQ=WEEKLY;BYDAY=MO;INTERVAL=2;BYDAY=TU;
+
+
+nov 6,7,8 annually 10-12pm
+DTSTART:{ref + relativedelta(month=11, day=6)}T100000
+DTEND:{ref + relativedelta(month=11, day=6)}T120000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=6,7,8
+
+july 10-14 annually 10-12pm
+DTSTART:{ref + relativedelta(month=7, day=10)}T100000
+DTEND:{ref + relativedelta(month=7, day=14)}T120000
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=10,11,12,13,14
+# we expect that a date range includes the end date
+
+nov 6-8
+DTSTART:{ref + relativedelta(month=11, day=6)}
+DTEND:{ref + relativedelta(month=11, day=8)}T235959
+# we expect that a date range includes the end date, so we set the end time to midnight of the end date
 
 every tues except last week of month
 DTSTART:{ref + relativedelta(weekday=TU(1))}
 RRULE:FREQ=WEEKLY;BYDAY=TU;EXDATE:{ref + relativedelta(day=31,weekday=TU(-1))}
 
+
+first mon of next quarter
+DTSTART:{ref.replace(day=1) + relativedelta(months=4 - month % 3) + relativedelta(weekday=MO)}
+# finding the next quarter is a bit tricky, we need to find the next quarter from the current month, we could create a custom parameter for relative quarters to improve accuracy
+
 friday on the last week of the quarter
-DTSTART:{ref + relativedelta(quarter=1, day = 1, weekday=FR(-1))}
+DTSTART:{ref + relativedelta(months=3 - month % 3, day = 31, weekday=FR(-1))}
+
+
+<!-- the beginning of Q1 Q3 1500
+DTSTART:{ref + relativedelta(months=3- month % 3, day = 1)}T150000
+RDATE:{ref + relativedelta(months=3 - month % 3, day = 1)}
+## should we bias the beginning of a business event to the first monday rather than the first date of the quarter? -->
+
+the first mon of Q1-4 10:40
+DTSTART:{ref.replace(month=1, day=1)}T104000
+RDATE:{ref.replace(month=4, day=1)}
+RDATE:{ref.replace(month=7, day=1)}
+RDATE:{ref.replace(month=10, day=1)}
+
+the second mon of Q1-4 8-9am every year
+DTSTART:{ref.replace(month=1, day=1) + relativedelta(weekday=MO(2))}T080000
+RRULE:FREQ=YEARLY;BYMONTH=1,4,7,10;BYDAY=MO;BYSETPOS=2
+
+quarterly 9am mon on first week
+DTSTART:{ref.replace(month=1, day=1) + relativedelta(weekday=MO(1))}T090000
+RRULE:FREQ=YEARLY;BYMONTH=1,4,7,10;BYDAY=MO;BYSETPOS=1
+
+Q2 w3 tuesday 10am
+DTSTART:{ref + relativedelta(month=4, day=1) + relativedelta(weekday=TU(3))}T100000
+
 
 last sunday of every month
 DTSTART:{ref + relativedelta(day = 31, weekday=SU(-1))}
@@ -231,7 +395,7 @@ TZOFFSETTO:-0400
 
 2:38pm in hawaii
 DTSTART;TZID=Pacific/Honolulu:{ref + relativedelta(hour=14, minute=38)}T143800
-# in this case we calculate from *our* reference time, not the target time. This could cause confusion as it might not technically be past 14:38 in hawaii.
+# in this case we calculate from *our* reference time, not the target time. This could cause confusion as it might not technically be past 14:38 in hawaii even if it is in the past for us.
 
 8pm EST
 DTSTART;TZID=America/New_York:{ref + relativedelta(hour=20)}T200000
@@ -365,7 +529,6 @@ RRULE:FREQ=MONTHLY;BYDAY=MO,TU,WE,TH,FR;BYSETPOS=-1
 
 3rd sat of this month 1035
 DTSTART:{ref.replace(day=1) + relativedelta(weekday=SA(3))}T103500
-
 
 sem 1 start sept 15
 sem 1 week 3 tues 1010
