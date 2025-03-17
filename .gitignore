@@ -1,0 +1,46 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Virtual environments
+venv/
+ENV/
+
+# Installation logs
+0.10.0
+0.26.0
+
+# Large model files
+*.gguf
+*.bin
+*.pt
+*.pth
+
+# Editor specific files
+.vscode/
+.idea/
+
+# OS specific
+.DS_Store
+Thumbs.db
