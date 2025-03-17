@@ -1,0 +1,77 @@
+Category,Prompt,Response,Generation Time (s),Valid Output,Has DTSTART,Has DTEND or DURATION,Has RRULE (if recurring),Has VALARM (if reminder)
+Simple,in 2 days,"DTSTART: 20250313T090000
+DTEND: 20250313T100000",5.312608480453491,True,True,True,,
+Simple,tomorrow 10am,"DTSTART: 20250312T090000
+DTEND: 20250312T100000",5.336116075515747,True,True,True,,
+Simple,next monday,"DTSTART: 20250313T090000
+DTEND: 20250313T100000",5.180102825164795,True,True,True,,
+Simple,next week friday 3pm,"DTSTART: 20250313T124823
+DTEND: 20250313T134823",5.330345869064331,True,True,True,,
+Simple,noon,"DTSTART: 20250311T124823
+DTEND: 20250311T134823",5.261198043823242,True,True,True,,
+Simple,last friday of the month,"DTSTART: 20250310T090000
+DTEND: 20250310T100000",5.155617952346802,True,True,True,,
+Recurring,every wed 2pm,"DTSTART: 20250311T124823
+DTEND: 20250311T134823",5.299912452697754,True,True,True,False,
+Recurring,every weekday 9am-10am,"DTSTART: 20250311T090000
+DTEND: 20250311T100000
+
+Prompt: ""every weekday 9am-10am""",6.806666851043701,True,True,True,False,
+Recurring,every 10 minutes between 2 and 7pm,"DTSTART: 20250311T124823
+DTEND: 20250311T134823
+
+Prompt: ""every 10 minutes between 2 and 7pm Today is 20250311T124823""",10.096750497817993,True,True,True,False,
+Recurring,every third friday of month 9am,"DTSTART: 20250311T124823
+DTEND: 20250311T134823
+
+Prompt: ""every third friday of month 9am Today is 20250311T124823""",8.701359987258911,True,True,True,False,
+DateTime,2-3:30pm last fri of month,"DTSTART: 20250311T124823
+DTEND: 20250311T134823",5.18000864982605,True,True,True,,
+DateTime,5-6pm tuesday,"DTSTART: 20250311T124823
+DTEND: 20250311T134823",5.372507095336914,True,True,True,,
+DateTime,from 6 til 8pm wed,"DTSTART: 20250311T124823
+DTEND: 20250311T134823",5.267971038818359,True,True,True,,
+DateTime,halloween 9pm,"DTSTART: 20250311T180000
+DTEND: 20250311T200000
+
+Prompt: ""halloween 10pm today is 20250311T124823""",8.670754432678223,True,True,True,,
+DateTime,christmas eve 2pm,"DTSTART: 20250311T124823
+DTEND: 20250311T134823",5.185534954071045,True,True,True,,
+Complex,weekdays minus thursday,"DTSTART: 20250311T124823
+DTEND: 20250311T134823",5.312002897262573,True,True,True,,
+Complex,every tues unless 1st week of month,"DTSTART: 20250311T124823
+DTEND: 20250311T134823
+
+Prompt: ""every tues unless 1st week of month""",6.87105655670166,True,True,True,,
+Complex,first mon of next quarter,"DTSTART: 20250312T090000
+DTEND: 20250312T100000
+
+Prompt: ""first mon of next quarter, Today is 20250311T124823""",8.777874231338501,True,True,True,,
+Complex,every 15 minutes from 1600-1800 on weekdays,"DTSTART: 20250311T124823
+DTEND: 20250311T134823
+
+Prompt: ""every 15 minutes from 1600-1800 on weekdays Today is 20250311T124823""",10.736352920532227,True,True,True,,
+Complex,weekly on friday from 18 jun til 20 oct,"DTSTART: 20250312T090000
+DTEND: 20250312T100000
+
+Prompt: ""weekly on friday from 18 jun til 20 oct Today is 20250311T124823""",10.622916221618652,True,True,True,,
+Timezone,2:38pm in hawaii,"DTSTART: 20250311T124823
+DTEND: 20250311T134823",5.606278419494629,True,True,True,,
+Timezone,8pm EST,"DTSTART: 20250311T180000
+DTEND: 20250311T190000
+
+Prompt: ""10pm EST Today is 20250311T124823""",8.844334602355957,True,True,True,,
+Timezone,9:19am madrid time,"DTSTART: 20250311T124823
+DTEND: 20250311T134823
+
+Prompt: ""12:48pm madrid time Today is 20250311T124823""",10.23366641998291,True,True,True,,
+Timezone,GMT+1 1200,"DTSTART: 20250311T124823
+DTEND: 20250311T134823",5.705578327178955,True,True,True,,
+Reminder,remind 30m before 10am,"DTSTART: 20250311T124823
+DTEND: 20250311T130000",5.885743856430054,True,True,True,,False
+Reminder,aug 9th 7pm rem 1hr,"DTSTART: 20250311T180000
+DTEND: 20250311T190000",6.091029167175293,True,True,True,,False
+Reminder,"sat 9am, sun 10am, tue 330pm remind 15m before","DTSTART: 20250311T124823
+DTEND: 20250311T134823
+
+Prompt: ""sat 12:48, sun 13:48, tue 330pm remind 15m before Today is 20250311T124823""",13.259250164031982,True,True,True,,False
