@@ -1,0 +1,195 @@
+1745+0800
+DTSTART:{ref + reldate(hour=17, minute=45)}T174500
+TZOFFSETTO:+0800
+
+0930+0530
+DTSTART:{ref + reldate(hour=9, minute=30)}T093000
+TZOFFSETTO:+0530
+
+1215-4h
+DTSTART:{ref + reldate(hour=12, minute=15)}T121500
+TZOFFSETTO:-0400
+
+0345+1h
+DTSTART:{ref + reldate(hour=3, minute=45)}T034500
+TZOFFSETTO:+0100
+
+2200-7hr
+DTSTART:{ref + reldate(hour=22)}T220000
+TZOFFSETTO:-0700
+
+1830+0545
+DTSTART:{ref + reldate(hour=18, minute=30)}T183000
+TZOFFSETTO:+0545
+
+0600-5hrs
+DTSTART:{ref + reldate(hour=6)}T060000
+TZOFFSETTO:-0500
+
+1400+2hrs
+DTSTART:{ref + reldate(hour=14)}T140000
+TZOFFSETTO:+0200
+
+2315-8hrs
+DTSTART:{ref + reldate(hour=23, minute=15)}T231500
+TZOFFSETTO:-0800
+
+0745+3hrs
+DTSTART:{ref + reldate(hour=7, minute=45)}T074500
+TZOFFSETTO:+0300
+
+1630-6h
+DTSTART:{ref + reldate(hour=16, minute=30)}T163000
+TZOFFSETTO:-0600
+
+0500+4hrs
+DTSTART:{ref + reldate(hour=5)}T050000
+TZOFFSETTO:+0400
+
+2130-3hrs
+DTSTART:{ref + reldate(hour=21, minute=30)}T213000
+TZOFFSETTO:-0300
+
+1045+9h
+DTSTART:{ref + reldate(hour=10, minute=45)}T104500
+TZOFFSETTO:+0900
+
+1920-10h
+DTSTART:{ref + reldate(hour=19, minute=20)}T192000
+TZOFFSETTO:-1000
+
+0815+10h
+DTSTART:{ref + reldate(hour=8, minute=15)}T081500
+TZOFFSETTO:+1000
+
+2245-9h
+DTSTART:{ref + reldate(hour=22, minute=45)}T224500
+TZOFFSETTO:-0900
+
+1130+6h
+DTSTART:{ref + reldate(hour=11, minute=30)}T113000
+TZOFFSETTO:+0600
+
+0300-2h
+DTSTART:{ref + reldate(hour=3)}T030000
+TZOFFSETTO:-0200
+
+1700+11h
+DTSTART:{ref + reldate(hour=17)}T170000
+TZOFFSETTO:+1100
+
+0430-11h
+DTSTART:{ref + reldate(hour=4, minute=30)}T043000
+TZOFFSETTO:-1100
+
+2000+12h
+DTSTART:{ref + reldate(hour=20)}T200000
+TZOFFSETTO:+1200
+
+1015-12h
+DTSTART:{ref + reldate(hour=10, minute=15)}T101500
+TZOFFSETTO:-1200
+
+0645+7h
+DTSTART:{ref + reldate(hour=6, minute=45)}T064500
+TZOFFSETTO:+0700
+
+1345+13h
+DTSTART:{ref + reldate(hour=13, minute=45)}T134500
+TZOFFSETTO:+1300
+
+2100-0100
+DTSTART:{ref + reldate(hour=21)}T210000
+TZOFFSETTO:-0100
+
+0530+1400
+DTSTART:{ref + reldate(hour=5, minute=30)}T053000
+TZOFFSETTO:+1400
+
+1800+0000
+DTSTART:{ref + reldate(hour=18)}T180000
+TZOFFSETTO:+0000
+
+0900-3.5h
+DTSTART:{ref + reldate(hour=9)}T090000
+TZOFFSETTO:-0330
+
+1530+0345
+DTSTART:{ref + reldate(hour=15, minute=30)}T153000
+TZOFFSETTO:+0345
+
+2330-0430
+DTSTART:{ref + reldate(hour=23, minute=30)}T233000
+TZOFFSETTO:-0430
+
+0700+0630
+DTSTART:{ref + reldate(hour=7)}T070000
+TZOFFSETTO:+0630
+
+1245-0630
+DTSTART:{ref + reldate(hour=12, minute=45)}T124500
+TZOFFSETTO:-0630
+
+1915+0930
+DTSTART:{ref + reldate(hour=19, minute=15)}T191500
+TZOFFSETTO:+0930
+
+0400-0930
+DTSTART:{ref + reldate(hour=4)}T040000
+TZOFFSETTO:-0930
+
+1100+1030
+DTSTART:{ref + reldate(hour=11)}T110000
+TZOFFSETTO:+1030
+
+2230-1030
+DTSTART:{ref + reldate(hour=22, minute=30)}T223000
+TZOFFSETTO:-1030
+
+0845+1130
+DTSTART:{ref + reldate(hour=8, minute=45)}T084500
+TZOFFSETTO:+1130
+
+1600-1130
+DTSTART:{ref + reldate(hour=16)}T160000
+TZOFFSETTO:-1130
+
+0200+1245
+DTSTART:{ref + reldate(hour=2)}T020000
+TZOFFSETTO:+1245
+
+1330-1245
+DTSTART:{ref + reldate(hour=13, minute=30)}T133000
+TZOFFSETTO:-1245
+
+2145+0445
+DTSTART:{ref + reldate(hour=21, minute=45)}T214500
+TZOFFSETTO:+0445
+
+0615-0445
+DTSTART:{ref + reldate(hour=6, minute=15)}T061500
+TZOFFSETTO:-0445
+
+1415+0830
+DTSTART:{ref + reldate(hour=14, minute=15)}T141500
+TZOFFSETTO:+0830
+
+2300-0830
+DTSTART:{ref + reldate(hour=23)}T230000
+TZOFFSETTO:-0830
+
+0730+1345
+DTSTART:{ref + reldate(hour=7, minute=30)}T073000
+TZOFFSETTO:+1345
+
+1500-1345
+DTSTART:{ref + reldate(hour=15)}T150000
+TZOFFSETTO:-1345
+
+1000+0245
+DTSTART:{ref + reldate(hour=10)}T100000
+TZOFFSETTO:+0245
+
+1945-0245
+DTSTART:{ref + reldate(hour=19, minute=45)}T194500
+TZOFFSETTO:-0245

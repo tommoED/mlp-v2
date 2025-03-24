@@ -1,0 +1,3 @@
+for 1.5hrs
+DTSTART:{ref}
+DURATION:PT1H30M

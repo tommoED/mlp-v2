@@ -1,0 +1,487 @@
+{"instruction": "wed 9:20", "response": "DTSTART:{ref + (WE)}T092000\nRRULE:FREQ=WEEKLY;BYDAY=WE;"}
+{"instruction": "mon 3:45", "response": "DTSTART:{ref + (MO)}T154500\nRRULE:FREQ=WEEKLY;BYDAY=MO;"}
+{"instruction": "tue 11:30", "response": "DTSTART:{ref + (TU)}T113000\nRRULE:FREQ=WEEKLY;BYDAY=TU;"}
+{"instruction": "thu 2:15", "response": "DTSTART:{ref + (TH)}T141500\nRRULE:FREQ=WEEKLY;BYDAY=TH;"}
+{"instruction": "fri 7:00", "response": "DTSTART:{ref + (FR)}T070000\nRRULE:FREQ=WEEKLY;BYDAY=FR;"}
+{"instruction": "sat 10:45", "response": "DTSTART:{ref + (SA)}T104500\nRRULE:FREQ=WEEKLY;BYDAY=SA;"}
+{"instruction": "sun 8:30", "response": "DTSTART:{ref + (SU)}T083000\nRRULE:FREQ=WEEKLY;BYDAY=SU;"}
+{"instruction": "wed 6:15", "response": "DTSTART:{ref + (WE)}T061500\nRRULE:FREQ=WEEKLY;BYDAY=WE;"}
+{"instruction": "mon 12:00", "response": "DTSTART:{ref + (MO)}T120000\nRRULE:FREQ=WEEKLY;BYDAY=MO;"}
+{"instruction": "tue 530", "response": "DTSTART:{ref + (TU)}T173000\nRRULE:FREQ=WEEKLY;BYDAY=TU;"}
+{"instruction": "thu 9:45pm", "response": "DTSTART:{ref + (TH)}T214500\nRRULE:FREQ=WEEKLY;BYDAY=TH;"}
+{"instruction": "fri 4:20", "response": "DTSTART:{ref + (FR)}T162000\nRRULE:FREQ=WEEKLY;BYDAY=FR;"}
+{"instruction": "sat 1:10", "response": "DTSTART:{ref + (SA)}T131000\nRRULE:FREQ=WEEKLY;BYDAY=SA;"}
+{"instruction": "sun 7:25pm", "response": "DTSTART:{ref + (SU)}T192500\nRRULE:FREQ=WEEKLY;BYDAY=SU;"}
+{"instruction": "wed 10:05pm", "response": "DTSTART:{ref + (WE)}T220500\nRRULE:FREQ=WEEKLY;BYDAY=WE;"}
+{"instruction": "next mon 9am", "response": "DTSTART:{ref + (days=1, MO)}T090000"}
+{"instruction": "next tue 10am", "response": "DTSTART:{ref + (days=1, MO) + (TU)}T100000"}
+{"instruction": "next wed 11am", "response": "DTSTART:{ref + (days=1, MO) + (WE)}T110000"}
+{"instruction": "next thu 12pm", "response": "DTSTART:{ref + (days=1, MO) + (TH)}T120000"}
+{"instruction": "next fri 1pm", "response": "DTSTART:{ref + (days=1, MO) + (FR)}T130000"}
+{"instruction": "next sat 2pm", "response": "DTSTART:{ref + (days=1, MO) + (SA)}T140000"}
+{"instruction": "next sun 3pm", "response": "DTSTART:{ref + (days=1, MO) + (SU)}T150000"}
+{"instruction": "next mon 4:30pm", "response": "DTSTART:{ref + (days=1, MO)}T163000"}
+{"instruction": "next tue 5:45pm", "response": "DTSTART:{ref + (days=1, MO) + (TU)}T174500"}
+{"instruction": "next wed 6:15am", "response": "DTSTART:{ref + (days=1, MO) + (WE)}T061500"}
+{"instruction": "next thu 7:30pm", "response": "DTSTART:{ref + (days=1, MO) + (TH)}T193000"}
+{"instruction": "next fri 8:45am", "response": "DTSTART:{ref + (days=1, MO) + (FR)}T084500"}
+{"instruction": "next sat 9:15pm", "response": "DTSTART:{ref + (days=1, MO) + (SA)}T211500"}
+{"instruction": "next sun 10:30am", "response": "DTSTART:{ref + (days=1, MO) + (SU)}T103000"}
+{"instruction": "next mon 11:45pm", "response": "DTSTART:{ref + (days=1, MO)}T234500"}
+{"instruction": "every mon 9am", "response": "DTSTART:{ref + (MO)}T090000\nRRULE:FREQ=WEEKLY;BYDAY=MO;"}
+{"instruction": "every tue 3pm", "response": "DTSTART:{ref + (TU)}T150000\nRRULE:FREQ=WEEKLY;BYDAY=TU;"}
+{"instruction": "every thu 5pm", "response": "DTSTART:{ref + (TH)}T170000\nRRULE:FREQ=WEEKLY;BYDAY=TH;"}
+{"instruction": "every fri 2:30pm", "response": "DTSTART:{ref + (FR)}T143000\nRRULE:FREQ=WEEKLY;BYDAY=FR;"}
+{"instruction": "every sat 715am", "response": "DTSTART:{ref + (SA)}T071500\nRRULE:FREQ=WEEKLY;BYDAY=SA;"}
+{"instruction": "every sun 445pm", "response": "DTSTART:{ref + (SU)}T164500\nRRULE:FREQ=WEEKLY;BYDAY=SU;"}
+{"instruction": "every day 9:30pm", "response": "DTSTART:{ref + (hour=21, minute=30)}T213000\nRRULE:FREQ=DAILY;"}
+{"instruction": "every weekday 1pm", "response": "DTSTART:{ref + (MO|TU|WE|TH|FR)}T130000\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;"}
+{"instruction": "every weekend 4pm", "response": "DTSTART:{ref + (SA|SU)}T160000\nRRULE:FREQ=WEEKLY;BYDAY=SA,SU;"}
+{"instruction": "every mon wed fri 7am", "response": "DTSTART:{ref + (MO|WE|FR)}T070000\nRRULE:FREQ=WEEKLY;BYDAY=MO,WE,FR;"}
+{"instruction": "every tue thu 6pm", "response": "DTSTART:{ref + (TU|TH)}T180000\nRRULE:FREQ=WEEKLY;BYDAY=TU,TH;"}
+{"instruction": "every week 3pm", "response": "DTSTART:{ref + (days=7)}T150000\nRRULE:FREQ=WEEKLY;"}
+{"instruction": "every 2 weeks 4pm", "response": "DTSTART:{ref + (days=14)}T160000\nRRULE:FREQ=WEEKLY;INTERVAL=2;"}
+{"instruction": "every month 15th 10am", "response": "DTSTART:{ref + (day=15)}T100000\nRRULE:FREQ=MONTHLY;"}
+{"instruction": "every month 1st 9am", "response": "DTSTART:{ref + (day=1)}T090000\nRRULE:FREQ=MONTHLY;"}
+{"instruction": "every month 5th 2pm", "response": "DTSTART:{ref + (day=5)}T140000\nRRULE:FREQ=MONTHLY;"}
+{"instruction": "10th of every month 3:30pm", "response": "DTSTART:{ref + (day=10)}T153000\nRRULE:FREQ=MONTHLY;"}
+{"instruction": "8:37am on the 20th monthly", "response": "DTSTART:{ref + (day=20)}T083700\nRRULE:FREQ=MONTHLY;"}
+{"instruction": "7:23pm 25th each month", "response": "DTSTART:{ref + (day=25)}T192300\nRRULE:FREQ=MONTHLY;"}
+{"instruction": "1142 3rd monthly", "response": "DTSTART:{ref + (day=3)}T114200\nRRULE:FREQ=MONTHLY;"}
+{"instruction": "5:15pm on the 12th every month", "response": "DTSTART:{ref + (day=12)}T171500\nRRULE:FREQ=MONTHLY;"}
+{"instruction": "every month 18th 615am", "response": "DTSTART:{ref + (day=18)}T061500\nRRULE:FREQ=MONTHLY;"}
+{"instruction": "every month 22nd 1645", "response": "DTSTART:{ref + (day=22)}T164500\nRRULE:FREQ=MONTHLY;"}
+{"instruction": "every month 7th 12pm", "response": "DTSTART:{ref + (day=7)}T120000\nRRULE:FREQ=MONTHLY;"}
+{"instruction": "every month 28th 1:30pm", "response": "DTSTART:{ref + (day=28)}T133000\nRRULE:FREQ=MONTHLY;"}
+{"instruction": "monthly on 14th 9:30pm", "response": "DTSTART:{ref + (day=14)}T213000\nRRULE:FREQ=MONTHLY;"}
+{"instruction": "monthly 8th 6am", "response": "DTSTART:{ref + (day=8)}T060000\nRRULE:FREQ=MONTHLY;"}
+{"instruction": "every 30th 1030pm", "response": "DTSTART:{ref + (day=30)}T223000\nRRULE:FREQ=MONTHLY;"}
+{"instruction": "monday in 3 weeks", "response": "DTSTART:{ref + (weeks=3, MO)}"}
+{"instruction": "friday in 1 week", "response": "DTSTART:{ref + (weeks=1, FR)}"}
+{"instruction": "wednesday in 4 weeks", "response": "DTSTART:{ref + (weeks=4, WE)}"}
+{"instruction": "tuesday in 5 weeks", "response": "DTSTART:{ref + (weeks=5, TU)}"}
+{"instruction": "saturday in 2 weeks", "response": "DTSTART:{ref + (weeks=2, SA)}"}
+{"instruction": "sunday in 3 weeks", "response": "DTSTART:{ref + (weeks=3, SU)}"}
+{"instruction": "monday in 6 weeks", "response": "DTSTART:{ref + (weeks=6, MO)}"}
+{"instruction": "thursday in 7 weeks", "response": "DTSTART:{ref + (weeks=7, TH)}"}
+{"instruction": "wednesday in 10 weeks", "response": "DTSTART:{ref + (weeks=10, WE)}"}
+{"instruction": "friday in 8 weeks", "response": "DTSTART:{ref + (weeks=8, FR)}"}
+{"instruction": "tuesday in 9 weeks", "response": "DTSTART:{ref + (weeks=9, TU)}"}
+{"instruction": "saturday in 4 weeks", "response": "DTSTART:{ref + (weeks=4, SA)}"}
+{"instruction": "sunday in 5 weeks", "response": "DTSTART:{ref + (weeks=5, SU)}"}
+{"instruction": "wednesday in 12 weeks", "response": "DTSTART:{ref + (weeks=12, WE)}"}
+{"instruction": "in 2 wednesdays", "response": "DTSTART:{ref + (2WE)}"}
+{"instruction": "in 3 thursdays", "response": "DTSTART:{ref + (3TH)}"}
+{"instruction": "in 4 fridays", "response": "DTSTART:{ref + (4FR)}"}
+{"instruction": "18 mondays from today", "response": "DTSTART:{ref + (18MO)}"}
+{"instruction": "147th monday from today", "response": "DTSTART:{ref + (147MO)}"}
+{"instruction": "3rd monday from today", "response": "DTSTART:{ref + (3MO)}"}
+{"instruction": "monday 2nd", "response": "DTSTART:{ref + (day=2, MO)}"}
+{"instruction": "thursday 5th", "response": "DTSTART:{ref + (day=5, TH)}"}
+{"instruction": "mon 5th jan", "response": "DTSTART:{ref + (day=5, month=1, MO)}"}
+{"instruction": "tue 15th feb", "response": "DTSTART:{ref + (day=15, month=2, TU)}"}
+{"instruction": "thursday the 20th of march", "response": "DTSTART:{ref + (day=20, month=3, TH)}"}
+{"instruction": "10th of april, friday", "response": "DTSTART:{ref + (day=10, month=4, FR)}"}
+{"instruction": "may 25th (saturday)", "response": "DTSTART:{ref + (day=25, month=5, SA)}"}
+{"instruction": "june 30 sunday", "response": "DTSTART:{ref + (day=30, month=6, SU)}"}
+{"instruction": "july 12 (wednesday)", "response": "DTSTART:{ref + (day=12, month=7, WE)}"}
+{"instruction": "august 8, monday", "response": "DTSTART:{ref + (day=8, month=8, MO)}"}
+{"instruction": "tuesday september 17", "response": "DTSTART:{ref + (day=17, month=9, TU)}"}
+{"instruction": "october 3rd, thursday", "response": "DTSTART:{ref + (day=3, month=10, TH)}"}
+{"instruction": "fri 22nd nov", "response": "DTSTART:{ref + (day=22, month=11, FR)}"}
+{"instruction": "sat 14th dec", "response": "DTSTART:{ref + (day=14, month=12, SA)}"}
+{"instruction": "sun 7th jan", "response": "DTSTART:{ref + (day=7, month=1, SU)}"}
+{"instruction": "wed 28th feb", "response": "DTSTART:{ref + (day=28, month=2, WE)}"}
+{"instruction": "2-3:30pm last fri of month", "response": "DTSTART:{ref + (day=31, -1FR)}T140000\nDTEND:{ref + (day=31, -1FR)}T153000"}
+{"instruction": "9am-10:30am last mon of month", "response": "DTSTART:{ref + (day=31, -1MO)}T090000\nDTEND:{ref + (day=31, -1MO)}T103000"}
+{"instruction": "11:00-12:00 last tue of month", "response": "DTSTART:{ref + (day=31, -1TU)}T110000\nDTEND:{ref + (day=31, -1TU)}T120000"}
+{"instruction": "1pm to 2:30pm 2nd last wed of month", "response": "DTSTART:{ref + (day=31, -2WE)}T130000\nDTEND:{ref + (day=31, -2WE)}T143000"}
+{"instruction": "from 3 until 4:15pm last thu of month", "response": "DTSTART:{ref + (day=31, -1TH)}T150000\nDTEND:{ref + (day=31, -1TH)}T161500"}
+{"instruction": "5-645 in the evening last sat of month", "response": "DTSTART:{ref + (day=31, -1SA)}T170000\nDTEND:{ref + (day=31, -1SA)}T184500"}
+{"instruction": "7-830pm 2nd last sun of month", "response": "DTSTART:{ref + (day=31, -2SU)}T190000\nDTEND:{ref + (day=31, -2SU)}T203000"}
+{"instruction": "10am till 11:15 first mon of month", "response": "DTSTART:{ref + (day=1, 1MO)}T100000\nDTEND:{ref + (day=1, 1MO)}T111500"}
+{"instruction": "noon-1:30p first tue of month", "response": "DTSTART:{ref + (day=1, 1TU)}T120000\nDTEND:{ref + (day=1, 1TU)}T133000"}
+{"instruction": "between 2 and 3:45 first wed of month", "response": "DTSTART:{ref + (day=1, 1WE)}T140000\nDTEND:{ref + (day=1, 1WE)}T154500"}
+{"instruction": "16:00-17:30 first thu of month", "response": "DTSTART:{ref + (day=1, 1TH)}T160000\nDTEND:{ref + (day=1, 1TH)}T173000"}
+{"instruction": "6pm to 7:15 first fri of month", "response": "DTSTART:{ref + (day=1, 1FR)}T180000\nDTEND:{ref + (day=1, 1FR)}T191500"}
+{"instruction": "8 till 9:30 evening first sat of month", "response": "DTSTART:{ref + (day=1, 1SA)}T200000\nDTEND:{ref + (day=1, 1SA)}T213000"}
+{"instruction": "1000-1145 first sun of month", "response": "DTSTART:{ref + (day=1, 1SU)}T100000\nDTEND:{ref + (day=1, 1SU)}T114500"}
+{"instruction": "13:00-14:30 third wed of month", "response": "DTSTART:{ref + (day=1, 3WE)}T130000\nDTEND:{ref + (day=1, 3WE)}T143000"}
+{"instruction": "5-6pm tuesday", "response": "DTSTART:{ref + (TU)}T170000\nDTEND:{ref + (TU)}T180000"}
+{"instruction": "9-10am wednesday", "response": "DTSTART:{ref + (WE)}T090000\nDTEND:{ref + (WE)}T100000"}
+{"instruction": "2-3:30pm thursday", "response": "DTSTART:{ref + (TH)}T140000\nDTEND:{ref + (TH)}T153000"}
+{"instruction": "7-8:15pm friday", "response": "DTSTART:{ref + (FR)}T190000\nDTEND:{ref + (FR)}T201500"}
+{"instruction": "11am-12pm saturday", "response": "DTSTART:{ref + (SA)}T110000\nDTEND:{ref + (SA)}T120000"}
+{"instruction": "3-4:45pm sunday", "response": "DTSTART:{ref + (SU)}T150000\nDTEND:{ref + (SU)}T164500"}
+{"instruction": "8:30-9:30am monday", "response": "DTSTART:{ref + (MO)}T083000\nDTEND:{ref + (MO)}T093000"}
+{"instruction": "12-1:30pm tuesday", "response": "DTSTART:{ref + (TU)}T120000\nDTEND:{ref + (TU)}T133000"}
+{"instruction": "4-5:15pm wednesday", "response": "DTSTART:{ref + (WE)}T160000\nDTEND:{ref + (WE)}T171500"}
+{"instruction": "6:30-8pm thursday", "response": "DTSTART:{ref + (TH)}T183000\nDTEND:{ref + (TH)}T200000"}
+{"instruction": "10-11:45am friday", "response": "DTSTART:{ref + (FR)}T100000\nDTEND:{ref + (FR)}T114500"}
+{"instruction": "1-2:30pm saturday", "response": "DTSTART:{ref + (SA)}T130000\nDTEND:{ref + (SA)}T143000"}
+{"instruction": "7-9pm sunday", "response": "DTSTART:{ref + (SU)}T190000\nDTEND:{ref + (SU)}T210000"}
+{"instruction": "9:30-10:30am monday", "response": "DTSTART:{ref + (MO)}T093000\nDTEND:{ref + (MO)}T103000"}
+{"instruction": "2:45-4:15pm tuesday", "response": "DTSTART:{ref + (TU)}T144500\nDTEND:{ref + (TU)}T161500"}
+{"instruction": "tuesday 10am for 2h", "response": "DTSTART:{ref + (TU)}T100000\nDURATION:PT2H"}
+{"instruction": "for 1h on monday at 9am", "response": "DTSTART:{ref + (MO)}T090000\nDURATION:PT1H"}
+{"instruction": "wednesday 2pm, duration 3h", "response": "DTSTART:{ref + (WE)}T140000\nDURATION:PT3H"}
+{"instruction": "1.5h thursday at 4pm", "response": "DTSTART:{ref + (TH)}T160000\nDURATION:PT1H30M"}
+{"instruction": "friday evening 6pm for 2.5h", "response": "DTSTART:{ref + (FR)}T180000\nDURATION:PT2H30M"}
+{"instruction": "4h saturday 11am", "response": "DTSTART:{ref + (SA)}T110000\nDURATION:PT4H"}
+{"instruction": "2h on sunday at 3pm", "response": "DTSTART:{ref + (SU)}T150000\nDURATION:PT2H"}
+{"instruction": "7pm monday for 1h", "response": "DTSTART:{ref + (MO)}T190000\nDURATION:PT1H"}
+{"instruction": "45m on tuesday 8am", "response": "DTSTART:{ref + (TU)}T080000\nDURATION:PT45M"}
+{"instruction": "wednesday 12pm for 1h", "response": "DTSTART:{ref + (WE)}T120000\nDURATION:PT1H"}
+{"instruction": "for 2h starting thursday 5:30pm", "response": "DTSTART:{ref + (TH)}T173000\nDURATION:PT2H"}
+{"instruction": "friday morning 10:30am, 1.5h duration", "response": "DTSTART:{ref + (FR)}T103000\nDURATION:PT1H30M"}
+{"instruction": "saturday afternoon for 3h at 2pm", "response": "DTSTART:{ref + (SA)}T140000\nDURATION:PT3H"}
+{"instruction": "duration 2h sunday 9:30am", "response": "DTSTART:{ref + (SU)}T093000\nDURATION:PT2H"}
+{"instruction": "30m monday 1pm", "response": "DTSTART:{ref + (MO)}T130000\nDURATION:PT30M"}
+{"instruction": "45m next tuesday 2pm", "response": "DTSTART:{ref + next(TU)}T140000\nDURATION:PT45M"}
+{"instruction": "1h wednesday 3pm", "response": "DTSTART:{ref + (WE)}T150000\nDURATION:PT1H"}
+{"instruction": "1.5h thursday 4pm", "response": "DTSTART:{ref + (TH)}T160000\nDURATION:PT1H30M"}
+{"instruction": "2h friday 5pm", "response": "DTSTART:{ref + (FR)}T170000\nDURATION:PT2H"}
+{"instruction": "2.5h next saturday 6pm", "response": "DTSTART:{ref + next(SA)}T180000\nDURATION:PT2H30M"}
+{"instruction": "3h next sunday 7pm", "response": "DTSTART:{ref + next(SU)}T190000\nDURATION:PT3H"}
+{"instruction": "15m monday 8am", "response": "DTSTART:{ref + (MO)}T080000\nDURATION:PT15M"}
+{"instruction": "20m tuesday 9am", "response": "DTSTART:{ref + (TU)}T090000\nDURATION:PT20M"}
+{"instruction": "25m wednesday 10am", "response": "DTSTART:{ref + (WE)}T100000\nDURATION:PT25M"}
+{"instruction": "35m thursday 11am", "response": "DTSTART:{ref + (TH)}T110000\nDURATION:PT35M"}
+{"instruction": "40m next friday 12pm", "response": "DTSTART:{ref + next(FR)}T120000\nDURATION:PT40M"}
+{"instruction": "50m saturday 1pm", "response": "DTSTART:{ref + (SA)}T130000\nDURATION:PT50M"}
+{"instruction": "55m sunday in 2w 2pm", "response": "DTSTART:{ref + next(2SU)}T140000\nDURATION:PT55M"}
+{"instruction": "4h monday 3pm", "response": "DTSTART:{ref + (MO)}T150000\nDURATION:PT4H"}
+{"instruction": "every weekday 9am-10am", "response": "DTSTART:{ref + (MO)}T090000\nDTEND:{ref + (MO)}T100000\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR"}
+{"instruction": "0947 mon, wed & sat 3h", "response": "DTSTART:{ref + (MO)}T094700\nDURATION:PT3H\nRDATE:{ref + (MO) + (WE)}T094700\nRDATE:{ref + (MO) + (SA)}T094700"}
+{"instruction": "10:30am tuesday, thursday and sunday for 2 hours", "response": "DTSTART:{ref + (TU)}T103000\nDURATION:PT2H\nRDATE:{ref + (TU) + (TH)}T103000\nRDATE:{ref + (TU) + (SU)}T103000"}
+{"instruction": "11:23am tuesday, thursday and sunday for 2 hours", "response": "DTSTART:{ref + (TU)}T112300\nDURATION:PT2H\nRDATE:{ref + (TU) + (TH)}T112300\nRDATE:{ref + (TU) + (SU)}T112300"}
+{"instruction": "tue fri sun 10:30am 1.5hr duration", "response": "DTSTART:{ref + (TU)}T103000\nDURATION:PT1H30M\nRDATE:{ref + (TU) + (FR)}T103000\nRDATE:{ref + (TU) + (SU)}T103000"}
+{"instruction": "tue fri sun 08:17am 1.5hr duration", "response": "DTSTART:{ref + (TU)}T081700\nDURATION:PT1H30M\nRDATE:{ref + (TU) + (FR)}T081700\nRDATE:{ref + (TU) + (SU)}T081700"}
+{"instruction": "1030-1430 on wed, fri, sun", "response": "DTSTART:{ref + (WE)}T103000\nDTEND:{ref + (WE)}T143000\nRDATE:{ref + (WE) + (FR)}T103000\nRDATE:{ref + (WE) + (SU)}T103000"}
+{"instruction": "1412-1837 on wed, fri, sun", "response": "DTSTART:{ref + (WE)}T141200\nDTEND:{ref + (WE)}T183700\nRDATE:{ref + (WE) + (FR)}T141200\nRDATE:{ref + (WE) + (SU)}T141200"}
+{"instruction": "10:30 on thursday, saturday & monday for 45 minutes", "response": "DTSTART:{ref + (TH)}T103000\nDURATION:PT45M\nRDATE:{ref + (TH) + (SA)}T103000\nRDATE:{ref + (TH) + (SA) + (MO)}T103000"}
+{"instruction": "15:42 on thursday, saturday & monday for 45 minutes", "response": "DTSTART:{ref + (TH)}T154200\nDURATION:PT45M\nRDATE:{ref + (TH) + (SA)}T154200\nRDATE:{ref + (TH) + (SA) + (MO)}T154200"}
+{"instruction": "2.5 hour sessions at 1135 on fri, sun and tue", "response": "DTSTART:{ref + (FR)}T113500\nDURATION:PT2H30M\nRDATE:{ref + (FR) + (SU)}T113500\nRDATE:{ref + (FR) + (SU) + (TU)}T113500"}
+{"instruction": "2.5 hour sessions at 723am on fri, sun and tue", "response": "DTSTART:{ref + (FR)}T072300\nDURATION:PT2H30M\nRDATE:{ref + (FR) + (SU)}T072300\nRDATE:{ref + (FR) + (SU) + (TU)}T072300"}
+{"instruction": "sunday, tuesday, thursday 10:30am for 1h", "response": "DTSTART:{ref + (SU)}T103000\nDURATION:PT1H\nRDATE:{ref + (SU) + (TU)}T103000\nRDATE:{ref + (SU) + (TH)}T103000"}
+{"instruction": "sunday, tuesday, thursday 6:58am for 1h", "response": "DTSTART:{ref + (SU)}T065800\nDURATION:PT1H\nRDATE:{ref + (SU) + (TU)}T065800\nRDATE:{ref + (SU) + (TH)}T065800"}
+{"instruction": "5h starting 10:30am on thu, sat, mon", "response": "DTSTART:{ref + (TH)}T103000\nDURATION:PT5H\nRDATE:{ref + (TH) + (SA)}T103000\nRDATE:{ref + (TH) + (SA) + (MO)}T103000"}
+{"instruction": "5h starting 13:27 on thu, sat, mon", "response": "DTSTART:{ref + (TH)}T132700\nDURATION:PT5H\nRDATE:{ref + (TH) + (SA)}T132700\nRDATE:{ref + (TH) + (SA) + (MO)}T132700"}
+{"instruction": "10:30-12:30 on friday, sunday and wednesday", "response": "DTSTART:{ref + (FR)}T103000\nDTEND:{ref + (FR)}T123000\nRDATE:{ref + (FR) + (SU)}T103000\nRDATE:{ref + (FR) + (SU) + (WE)}T103000"}
+{"instruction": "09:18-11:43 on friday, sunday and wednesday", "response": "DTSTART:{ref + (FR)}T091800\nDTEND:{ref + (FR)}T114300\nRDATE:{ref + (FR) + (SU)}T091800\nRDATE:{ref + (FR) + (SU) + (WE)}T091800"}
+{"instruction": "tue, thu & sun at 730am lasting 90 minutes", "response": "DTSTART:{ref + (TU)}T073000\nDURATION:PT1H30M\nRDATE:{ref + (TU) + (TH)}T073000\nRDATE:{ref + (TU) + (SU)}T073000"}
+{"instruction": "tue, thu & sun at 405pm lasting 90 minutes", "response": "DTSTART:{ref + (TU)}T160500\nDURATION:PT1H30M\nRDATE:{ref + (TU) + (TH)}T160500\nRDATE:{ref + (TU) + (SU)}T160500"}
+{"instruction": "next sat, mon, wed 905-1330", "response": "DTSTART:{ref + (days=1, MO) + (SA)}T090500\nDTEND:{ref + (days=1, MO) + (SA)}T133000\nDURATION:PT3H\nRDATE:{ref + (days=1, MO)}T090500\nRDATE:{ref + (days=1, MO) + (WE)}T090500"}
+{"instruction": "next tue, thu, sat 1000-1200", "response": "DTSTART:{ref + (days=1, MO) + (TU)}T100000\nDTEND:{ref + (days=1, MO) + (TU)}T120000\nRDATE:{ref + (days=1, MO) + (TH)}T100000\nRDATE:{ref + (days=1, MO) + (SA)}T100000"}
+{"instruction": "next wed, fri, sun 1400-1600", "response": "DTSTART:{ref + (days=1, MO) + (WE)}T140000\nDTEND:{ref + (days=1, MO) + (WE)}T160000\nRDATE:{ref + (days=1, MO) + (FR)}T140000\nRDATE:{ref + (days=1, MO) + (SU)}T140000"}
+{"instruction": "next mon, thu, sat 0800-0930", "response": "DTSTART:{ref + (days=1, MO) + (MO)}T080000\nDTEND:{ref + (days=1, MO) + (MO)}T093000\nRDATE:{ref + (days=1, MO) + (TH)}T080000\nRDATE:{ref + (days=1, MO) + (SA)}T080000"}
+{"instruction": "next tue, fri, sun 1530-1700", "response": "DTSTART:{ref + (days=1, MO) + (TU)}T153000\nDTEND:{ref + (days=1, MO) + (TU)}T170000\nRDATE:{ref + (days=1, MO) + (FR)}T153000\nRDATE:{ref + (days=1, MO) + (SU)}T153000"}
+{"instruction": "next wed, sat, mon 1100-1300", "response": "DTSTART:{ref + (days=1, MO) + (WE)}T110000\nDTEND:{ref + (days=1, MO) + (WE)}T130000\nRDATE:{ref + (days=1, MO) + (SA)}T110000\nRDATE:{ref + (days=1, MO) + (MO(+1))}T110000"}
+{"instruction": "next thu, sun, tue 0730-0900", "response": "DTSTART:{ref + (days=1, MO) + (TH)}T073000\nDTEND:{ref + (days=1, MO) + (TH)}T090000\nRDATE:{ref + (days=1, MO) + (SU)}T073000\nRDATE:{ref + (days=1, MO) + (TU(+1))}T073000"}
+{"instruction": "next fri, mon, wed 1245-1415", "response": "DTSTART:{ref + (days=1, MO) + (FR)}T124500\nDTEND:{ref + (days=1, MO) + (FR)}T141500\nRDATE:{ref + (days=1, MO) + (MO(+1))}T124500\nRDATE:{ref + (days=1, MO) + (WE(+1))}T124500"}
+{"instruction": "next sat, tue, thu 1630-1800", "response": "DTSTART:{ref + (days=1, MO) + (SA)}T163000\nDTEND:{ref + (days=1, MO) + (SA)}T180000\nRDATE:{ref + (days=1, MO) + (TU(+1))}T163000\nRDATE:{ref + (days=1, MO) + (TH(+1))}T163000"}
+{"instruction": "next sun, wed, fri 0900-1030", "response": "DTSTART:{ref + (days=1, MO) + (SU)}T090000\nDTEND:{ref + (days=1, MO) + (SU)}T103000\nRDATE:{ref + (days=1, MO) + (WE(+1))}T090000\nRDATE:{ref + (days=1, MO) + (FR(+1))}T090000"}
+{"instruction": "next mon, thu, sat 1300-1500", "response": "DTSTART:{ref + (days=1, MO) + (MO(+1))}T130000\nDTEND:{ref + (days=1, MO) + (MO(+1))}T150000\nRDATE:{ref + (days=1, MO) + (TH(+1))}T130000\nRDATE:{ref + (days=1, MO) + (SA(+1))}T130000"}
+{"instruction": "next tue, fri, sun 0830-1000", "response": "DTSTART:{ref + (days=1, MO) + (TU(+1))}T083000\nDTEND:{ref + (days=1, MO) + (TU(+1))}T100000\nRDATE:{ref + (days=1, MO) + (FR(+1))}T083000\nRDATE:{ref + (days=1, MO) + (SU(+1))}T083000"}
+{"instruction": "next wed, sat, mon 1500-1700", "response": "DTSTART:{ref + (days=1, MO) + (WE(+1))}T150000\nDTEND:{ref + (days=1, MO) + (WE(+1))}T170000\nRDATE:{ref + (days=1, MO) + (SA(+1))}T150000\nRDATE:{ref + (days=1, MO) + (MO(+2))}T150000"}
+{"instruction": "next thu, sun, tue 1900-2030", "response": "DTSTART:{ref + (days=1, MO) + (TH(+1))}T190000\nDTEND:{ref + (days=1, MO) + (TH(+1))}T203000\nRDATE:{ref + (days=1, MO) + (SU(+1))}T190000\nRDATE:{ref + (days=1, MO) + (TU(+2))}T190000"}
+{"instruction": "next fri, mon, wed 0700-0830", "response": "DTSTART:{ref + (days=1, MO) + (FR(+1))}T070000\nDTEND:{ref + (days=1, MO) + (FR(+1))}T083000\nRDATE:{ref + (days=1, MO) + (MO(+2))}T070000\nRDATE:{ref + (days=1, MO) + (WE(+2))}T070000"}
+{"instruction": "next week", "response": "DTSTART:{ref + (days=1, MO)}"}
+{"instruction": "DTFORMAT: DDMMYYYY\n16/08 1245-4pm", "response": "DTSTART:{ref + (day=16, month=8)}T124500\nDTEND:{ref + (day=16, month=8)}T160000"}
+{"instruction": "DTFORMAT: DDMMYYYY\n05/09 0900-1130", "response": "DTSTART:{ref + (day=5, month=9)}T090000\nDTEND:{ref + (day=5, month=9)}T113000"}
+{"instruction": "DTFORMAT: DDMMYYYY\n23/11 1500-1700", "response": "DTSTART:{ref + (day=23, month=11)}T150000\nDTEND:{ref + (day=23, month=11)}T170000"}
+{"instruction": "DTFORMAT: DDMMYYYY\n14/02 0830-1000", "response": "DTSTART:{ref + (day=14, month=2)}T083000\nDTEND:{ref + (day=14, month=2)}T100000"}
+{"instruction": "DTFORMAT: DDMMYYYY\n30/06 1900-2130", "response": "DTSTART:{ref + (day=30, month=6)}T190000\nDTEND:{ref + (day=30, month=6)}T213000"}
+{"instruction": "DTFORMAT: DDMMYYYY\n19/04 1000-1200", "response": "DTSTART:{ref + (day=19, month=4)}T100000\nDTEND:{ref + (day=19, month=4)}T120000"}
+{"instruction": "DTFORMAT: DDMMYYYY\n07/12 1330-1530", "response": "DTSTART:{ref + (day=7, month=12)}T133000\nDTEND:{ref + (day=7, month=12)}T153000"}
+{"instruction": "DTFORMAT: DDMMYYYY\n25/03 0730-0900", "response": "DTSTART:{ref + (day=25, month=3)}T073000\nDTEND:{ref + (day=25, month=3)}T090000"}
+{"instruction": "DTFORMAT: DDMMYYYY\n11/10 1600-1800", "response": "DTSTART:{ref + (day=11, month=10)}T160000\nDTEND:{ref + (day=11, month=10)}T180000"}
+{"instruction": "DTFORMAT: DDMMYYYY\n02/01 1100-1400", "response": "DTSTART:{ref + (day=2, month=1)}T110000\nDTEND:{ref + (day=2, month=1)}T140000"}
+{"instruction": "DTFORMAT: DDMMYYYY\n28/07 1415-1545", "response": "DTSTART:{ref + (day=28, month=7)}T141500\nDTEND:{ref + (day=28, month=7)}T154500"}
+{"instruction": "DTFORMAT: DDMMYYYY\n09/05 0945-1115", "response": "DTSTART:{ref + (day=9, month=5)}T094500\nDTEND:{ref + (day=9, month=5)}T111500"}
+{"instruction": "DTFORMAT: DDMMYYYY\n17/09 1800-2000", "response": "DTSTART:{ref + (day=17, month=9)}T180000\nDTEND:{ref + (day=17, month=9)}T200000"}
+{"instruction": "DTFORMAT: DDMMYYYY\n21/11 1230-1400", "response": "DTSTART:{ref + (day=21, month=11)}T123000\nDTEND:{ref + (day=21, month=11)}T140000"}
+{"instruction": "DTFORMAT: DDMMYYYY\n03/06 1700-1830", "response": "DTSTART:{ref + (day=3, month=6)}T170000\nDTEND:{ref + (day=3, month=6)}T183000"}
+{"instruction": "DTFORMAT: MMDDYYYY\n12/25", "response": "DTSTART:{ref + (month=12, day=25)}\nDTEND:{ref + (month=12, day=25+1)}"}
+{"instruction": "DTFORMAT: MMDDYYYY\n03/06 1700-1830", "response": "DTSTART:{ref + (month=3, day=6)}T170000\nDTEND:{ref + (month=3, day=6)}T183000"}
+{"instruction": "DTFORMAT: MMDDYYYY\n01/15 0900-1030", "response": "DTSTART:{ref + (month=1, day=15)}T090000\nDTEND:{ref + (month=1, day=15)}T103000"}
+{"instruction": "DTFORMAT: MMDDYYYY\n05/22 1400-1600", "response": "DTSTART:{ref + (month=5, day=22)}T140000\nDTEND:{ref + (month=5, day=22)}T160000"}
+{"instruction": "DTFORMAT: MMDDYYYY\n07/04 1200-1500", "response": "DTSTART:{ref + (month=7, day=4)}T120000\nDTEND:{ref + (month=7, day=4)}T150000"}
+{"instruction": "DTFORMAT: MMDDYYYY\n09/10 0800-0930", "response": "DTSTART:{ref + (month=9, day=10)}T080000\nDTEND:{ref + (month=9, day=10)}T093000"}
+{"instruction": "DTFORMAT: MMDDYYYY\n11/23 1600-1800", "response": "DTSTART:{ref + (month=11, day=23)}T160000\nDTEND:{ref + (month=11, day=23)}T180000"}
+{"instruction": "DTFORMAT: MMDDYYYY\n02/14 1900-2100", "response": "DTSTART:{ref + (month=2, day=14)}T190000\nDTEND:{ref + (month=2, day=14)}T210000"}
+{"instruction": "DTFORMAT: MMDDYYYY\n04/30 1000-1200", "response": "DTSTART:{ref + (month=4, day=30)}T100000\nDTEND:{ref + (month=4, day=30)}T120000"}
+{"instruction": "DTFORMAT: MMDDYYYY\n06/15 1300-1430", "response": "DTSTART:{ref + (month=6, day=15)}T130000\nDTEND:{ref + (month=6, day=15)}T143000"}
+{"instruction": "DTFORMAT: MMDDYYYY\n08/21 1500-1700", "response": "DTSTART:{ref + (month=8, day=21)}T150000\nDTEND:{ref + (month=8, day=21)}T170000"}
+{"instruction": "DTFORMAT: MMDDYYYY\n10/31 1800-2000", "response": "DTSTART:{ref + (month=10, day=31)}T180000\nDTEND:{ref + (month=10, day=31)}T200000"}
+{"instruction": "DTFORMAT: MMDDYYYY\n12/24 1700-1900", "response": "DTSTART:{ref + (month=12, day=24)}T170000\nDTEND:{ref + (month=12, day=24)}T190000"}
+{"instruction": "DTFORMAT: MMDDYYYY\n02/29 0930-1130", "response": "DTSTART:{ref + (month=2, day=29)}T093000\nDTEND:{ref + (month=2, day=29)}T113000"}
+{"instruction": "DTFORMAT: MMDDYYYY\n05/01 1100-1300", "response": "DTSTART:{ref + (month=5, day=1)}T110000\nDTEND:{ref + (month=5, day=1)}T130000"}
+{"instruction": "DTFORMAT: MMDDYYYY\n09/05 1400-1630", "response": "DTSTART:{ref + (month=9, day=5)}T140000\nDTEND:{ref + (month=9, day=5)}T163000"}
+{"instruction": "in 2 days", "response": "DTSTART:{ref + (days=2)}"}
+{"instruction": "in 2 days at 10am", "response": "DTSTART:{ref + (days=2)}T100000"}
+{"instruction": "in 3 days", "response": "DTSTART:{ref + (days=3)}"}
+{"instruction": "in 5 days at 2pm", "response": "DTSTART:{ref + (days=5)}T140000"}
+{"instruction": "in 1 week", "response": "DTSTART:{ref + (days=7)}"}
+{"instruction": "in 10 days at 9am", "response": "DTSTART:{ref + (days=10)}T090000"}
+{"instruction": "in 2 weeks", "response": "DTSTART:{ref + (weeks=2)}"}
+{"instruction": "in 2 weeks at 3pm", "response": "DTSTART:{ref + (weeks=2)}T150000"}
+{"instruction": "in 1 month", "response": "DTSTART:{ref + (months=1)}"}
+{"instruction": "in 1 month at 11am", "response": "DTSTART:{ref + (months=1)}T110000"}
+{"instruction": "in 3 months", "response": "DTSTART:{ref + (months=3)}"}
+{"instruction": "in 3 months at 4:30pm", "response": "DTSTART:{ref + (months=3)}T163000"}
+{"instruction": "in 1 year", "response": "DTSTART:{ref + (years=1)}"}
+{"instruction": "in 1 year on the 1st of june", "response": "DTSTART:{ref + (years=1, day=1, month=6)}"}
+{"instruction": "in 5 years", "response": "DTSTART:{ref + (years=5)}"}
+{"instruction": "in 18 months", "response": "DTSTART:{ref + (months=18)}"}
+{"instruction": "DTFORMAT: DDMMYYYY\nin 2y 1/08", "response": "DTSTART:{ref + (years=2, day=1, month=8)}"}
+{"instruction": "DTFORMAT: MMDDYYYY\n2y from now 12/27", "response": "DTSTART:{ref + (years=2, month=12, day=27)}"}
+{"instruction": "DTFORMAT: DDMMYYYY\nnext year 17.05", "response": "DTSTART:{ref + (years=1, day=17, month=5)}"}
+{"instruction": "DTFORMAT: MMDDYYYY\nin 5 years 12/08", "response": "DTSTART:{ref + (years=5, month=12, day=8)}"}
+{"instruction": "next tuesday", "response": "DTSTART:{ref + (days=1, MO) + (TU)}"}
+{"instruction": "first mon of feb", "response": "DTSTART:{ref + (month=2, day=1, 1MO)}"}
+{"instruction": "2nd tue of mar", "response": "DTSTART:{ref + (month=3, day=1, 2TU)}"}
+{"instruction": "first wed of apr", "response": "DTSTART:{ref + (month=4, day=1, 1WE)}"}
+{"instruction": "4th thu of may", "response": "DTSTART:{ref + (month=5, day=1, 4TH)}"}
+{"instruction": "2nd fri of jun", "response": "DTSTART:{ref + (month=6, day=1, 2FR)}"}
+{"instruction": "first sat of jul", "response": "DTSTART:{ref + (month=7, day=1, 1SA)}"}
+{"instruction": "first sun of aug", "response": "DTSTART:{ref + (month=8, day=1, 1SU)}"}
+{"instruction": "first mon of sep", "response": "DTSTART:{ref + (month=9, day=1, 1MO)}"}
+{"instruction": "1st tue of oct", "response": "DTSTART:{ref + (month=10, day=1, 1TU)}"}
+{"instruction": "wed 2nd of nov", "response": "DTSTART:{ref + (month=11, day=2, 1WE)}"}
+{"instruction": "thu 3rd of dec", "response": "DTSTART:{ref + (month=12, day=3, 1TH)}"}
+{"instruction": "fri 4th of jan", "response": "DTSTART:{ref + (month=1, day=1, 1FR)}"}
+{"instruction": "first sat of feb", "response": "DTSTART:{ref + (month=2, day=1, 1SA)}"}
+{"instruction": "first sun of mar", "response": "DTSTART:{ref + (month=3, day=1, 1SU)}"}
+{"instruction": "first mon of apr", "response": "DTSTART:{ref + (month=4, day=1, 1MO)}"}
+{"instruction": "3rd june", "response": "DTSTART:{ref + (day=3, month=6)}"}
+{"instruction": "5th january", "response": "DTSTART:{ref + (day=5, month=1)}"}
+{"instruction": "12th february", "response": "DTSTART:{ref + (day=12, month=2)}"}
+{"instruction": "21st march", "response": "DTSTART:{ref + (day=21, month=3)}"}
+{"instruction": "7th april", "response": "DTSTART:{ref + (day=7, month=4)}"}
+{"instruction": "19th may", "response": "DTSTART:{ref + (day=19, month=5)}"}
+{"instruction": "28th june", "response": "DTSTART:{ref + (day=28, month=6)}"}
+{"instruction": "14th july", "response": "DTSTART:{ref + (day=14, month=7)}"}
+{"instruction": "2nd august", "response": "DTSTART:{ref + (day=2, month=8)}"}
+{"instruction": "30th september", "response": "DTSTART:{ref + (day=30, month=9)}"}
+{"instruction": "11th october", "response": "DTSTART:{ref + (day=11, month=10)}"}
+{"instruction": "25th november", "response": "DTSTART:{ref + (day=25, month=11)}"}
+{"instruction": "17th december", "response": "DTSTART:{ref + (day=17, month=12)}"}
+{"instruction": "8th january", "response": "DTSTART:{ref + (day=8, month=1)}"}
+{"instruction": "16th february", "response": "DTSTART:{ref + (day=16, month=2)}"}
+{"instruction": "23rd march", "response": "DTSTART:{ref + (day=23, month=3)}"}
+{"instruction": "9th april", "response": "DTSTART:{ref + (day=9, month=4)}"}
+{"instruction": "27th may", "response": "DTSTART:{ref + (day=27, month=5)}"}
+{"instruction": "4th june", "response": "DTSTART:{ref + (day=4, month=6)}"}
+{"instruction": "20th july", "response": "DTSTART:{ref + (day=20, month=7)}"}
+{"instruction": "13th august", "response": "DTSTART:{ref + (day=13, month=8)}"}
+{"instruction": "1st september", "response": "DTSTART:{ref + (day=1, month=9)}"}
+{"instruction": "29th october", "response": "DTSTART:{ref + (day=29, month=10)}"}
+{"instruction": "6th november", "response": "DTSTART:{ref + (day=6, month=11)}"}
+{"instruction": "24th december", "response": "DTSTART:{ref + (day=24, month=12)}"}
+{"instruction": "10th january", "response": "DTSTART:{ref + (day=10, month=1)}"}
+{"instruction": "18th february", "response": "DTSTART:{ref + (day=18, month=2)}"}
+{"instruction": "3rd march", "response": "DTSTART:{ref + (day=3, month=3)}"}
+{"instruction": "15th april", "response": "DTSTART:{ref + (day=15, month=4)}"}
+{"instruction": "22nd may", "response": "DTSTART:{ref + (day=22, month=5)}"}
+{"instruction": "7th june", "response": "DTSTART:{ref + (day=7, month=6)}"}
+{"instruction": "31st july", "response": "DTSTART:{ref + (day=31, month=7)}"}
+{"instruction": "9th august", "response": "DTSTART:{ref + (day=9, month=8)}"}
+{"instruction": "26th september", "response": "DTSTART:{ref + (day=26, month=9)}"}
+{"instruction": "14th october", "response": "DTSTART:{ref + (day=14, month=10)}"}
+{"instruction": "2nd november", "response": "DTSTART:{ref + (day=2, month=11)}"}
+{"instruction": "19th december", "response": "DTSTART:{ref + (day=19, month=12)}"}
+{"instruction": "6th january", "response": "DTSTART:{ref + (day=6, month=1)}"}
+{"instruction": "23rd february", "response": "DTSTART:{ref + (day=23, month=2)}"}
+{"instruction": "11th march", "response": "DTSTART:{ref + (day=11, month=3)}"}
+{"instruction": "28th april", "response": "DTSTART:{ref + (day=28, month=4)}"}
+{"instruction": "5th may", "response": "DTSTART:{ref + (day=5, month=5)}"}
+{"instruction": "17th june", "response": "DTSTART:{ref + (day=17, month=6)}"}
+{"instruction": "24th july", "response": "DTSTART:{ref + (day=24, month=7)}"}
+{"instruction": "8th august", "response": "DTSTART:{ref + (day=8, month=8)}"}
+{"instruction": "20th september", "response": "DTSTART:{ref + (day=20, month=9)}"}
+{"instruction": "3rd october", "response": "DTSTART:{ref + (day=3, month=10)}"}
+{"instruction": "16th november", "response": "DTSTART:{ref + (day=16, month=11)}"}
+{"instruction": "29th december", "response": "DTSTART:{ref + (day=29, month=12)}"}
+{"instruction": "7th january", "response": "DTSTART:{ref + (day=7, month=1)}"}
+{"instruction": "14th february", "response": "DTSTART:{ref + (day=14, month=2)}"}
+{"instruction": "21st march", "response": "DTSTART:{ref + (day=21, month=3)}"}
+{"instruction": "4th april", "response": "DTSTART:{ref + (day=4, month=4)}"}
+{"instruction": "18th may", "response": "DTSTART:{ref + (day=18, month=5)}"}
+{"instruction": "25th june", "response": "DTSTART:{ref + (day=25, month=6)}"}
+{"instruction": "12th july", "response": "DTSTART:{ref + (day=12, month=7)}"}
+{"instruction": "30th august", "response": "DTSTART:{ref + (day=30, month=8)}"}
+{"instruction": "9th september", "response": "DTSTART:{ref + (day=9, month=9)}"}
+{"instruction": "27th october", "response": "DTSTART:{ref + (day=27, month=10)}"}
+{"instruction": "13th november", "response": "DTSTART:{ref + (day=13, month=11)}"}
+{"instruction": "1st december", "response": "DTSTART:{ref + (day=1, month=12)}"}
+{"instruction": "19th january", "response": "DTSTART:{ref + (day=19, month=1)}"}
+{"instruction": "5th february", "response": "DTSTART:{ref + (day=5, month=2)}"}
+{"instruction": "22nd march", "response": "DTSTART:{ref + (day=22, month=3)}"}
+{"instruction": "10th april", "response": "DTSTART:{ref + (day=10, month=4)}"}
+{"instruction": "28th may", "response": "DTSTART:{ref + (day=28, month=5)}"}
+{"instruction": "15th june", "response": "DTSTART:{ref + (day=15, month=6)}"}
+{"instruction": "3rd july", "response": "DTSTART:{ref + (day=3, month=7)}"}
+{"instruction": "21st august", "response": "DTSTART:{ref + (day=21, month=8)}"}
+{"instruction": "7th september", "response": "DTSTART:{ref + (day=7, month=9)}"}
+{"instruction": "24th october", "response": "DTSTART:{ref + (day=24, month=10)}"}
+{"instruction": "11th november", "response": "DTSTART:{ref + (day=11, month=11)}"}
+{"instruction": "29th december", "response": "DTSTART:{ref + (day=29, month=12)}"}
+{"instruction": "16th january", "response": "DTSTART:{ref + (day=16, month=1)}"}
+{"instruction": "2nd february", "response": "DTSTART:{ref + (day=2, month=2)}"}
+{"instruction": "20th march", "response": "DTSTART:{ref + (day=20, month=3)}"}
+{"instruction": "8th april", "response": "DTSTART:{ref + (day=8, month=4)}"}
+{"instruction": "25th may", "response": "DTSTART:{ref + (day=25, month=5)}"}
+{"instruction": "13th june", "response": "DTSTART:{ref + (day=13, month=6)}"}
+{"instruction": "30th july", "response": "DTSTART:{ref + (day=30, month=7)}"}
+{"instruction": "17th august", "response": "DTSTART:{ref + (day=17, month=8)}"}
+{"instruction": "4th september", "response": "DTSTART:{ref + (day=4, month=9)}"}
+{"instruction": "22nd october", "response": "DTSTART:{ref + (day=22, month=10)}"}
+{"instruction": "9th november", "response": "DTSTART:{ref + (day=9, month=11)}"}
+{"instruction": "27th december", "response": "DTSTART:{ref + (day=27, month=12)}"}
+{"instruction": "14th january", "response": "DTSTART:{ref + (day=14, month=1)}"}
+{"instruction": "1st february", "response": "DTSTART:{ref + (day=1, month=2)}"}
+{"instruction": "19th march", "response": "DTSTART:{ref + (day=19, month=3)}"}
+{"instruction": "6th april", "response": "DTSTART:{ref + (day=6, month=4)}"}
+{"instruction": "23rd may", "response": "DTSTART:{ref + (day=23, month=5)}"}
+{"instruction": "10th june", "response": "DTSTART:{ref + (day=10, month=6)}"}
+{"instruction": "28th july", "response": "DTSTART:{ref + (day=28, month=7)}"}
+{"instruction": "15th august", "response": "DTSTART:{ref + (day=15, month=8)}"}
+{"instruction": "2nd september", "response": "DTSTART:{ref + (day=2, month=9)}"}
+{"instruction": "20th october", "response": "DTSTART:{ref + (day=20, month=10)}"}
+{"instruction": "7th november", "response": "DTSTART:{ref + (day=7, month=11)}"}
+{"instruction": "25th december", "response": "DTSTART:{ref + (day=25, month=12)}"}
+{"instruction": "12th january", "response": "DTSTART:{ref + (day=12, month=1)}"}
+{"instruction": "29th february", "response": "DTSTART:{ref + (day=29, month=2)}"}
+{"instruction": "17th march", "response": "DTSTART:{ref + (day=17, month=3)}"}
+{"instruction": "4th april", "response": "DTSTART:{ref + (day=4, month=4)}"}
+{"instruction": "21st may", "response": "DTSTART:{ref + (day=21, month=5)}"}
+{"instruction": "8th june", "response": "DTSTART:{ref + (day=8, month=6)}"}
+{"instruction": "26th july", "response": "DTSTART:{ref + (day=26, month=7)}"}
+{"instruction": "13th august", "response": "DTSTART:{ref + (day=13, month=8)}"}
+{"instruction": "30th september", "response": "DTSTART:{ref + (day=30, month=9)}"}
+{"instruction": "18th october", "response": "DTSTART:{ref + (day=18, month=10)}"}
+{"instruction": "5th november", "response": "DTSTART:{ref + (day=5, month=11)}"}
+{"instruction": "23rd december", "response": "DTSTART:{ref + (day=23, month=12)}"}
+{"instruction": "june 3", "response": "DTSTART:{ref + (day=3, month=6)}"}
+{"instruction": "15th july", "response": "DTSTART:{ref + (day=15, month=7)}"}
+{"instruction": "july 15", "response": "DTSTART:{ref + (day=15, month=7)}"}
+{"instruction": "22nd august", "response": "DTSTART:{ref + (day=22, month=8)}"}
+{"instruction": "august 22", "response": "DTSTART:{ref + (day=22, month=8)}"}
+{"instruction": "10th september", "response": "DTSTART:{ref + (day=10, month=9)}"}
+{"instruction": "september 10", "response": "DTSTART:{ref + (day=10, month=9)}"}
+{"instruction": "5th october", "response": "DTSTART:{ref + (day=5, month=10)}"}
+{"instruction": "october 5", "response": "DTSTART:{ref + (day=5, month=10)}"}
+{"instruction": "18th november", "response": "DTSTART:{ref + (day=18, month=11)}"}
+{"instruction": "november 18", "response": "DTSTART:{ref + (day=18, month=11)}"}
+{"instruction": "25th december", "response": "DTSTART:{ref + (day=25, month=12)}"}
+{"instruction": "december 25", "response": "DTSTART:{ref + (day=25, month=12)}"}
+{"instruction": "1st jan 1245-1415", "response": "DTSTART:{ref + (day=1, month=1)}T124500\nDTEND:{ref + (day=1, month=1)}T141500"}
+{"instruction": "2 oct 10-12", "response": "DTSTART:{ref + (day=2, month=10)}T100000\nDTEND:{ref + (day=2, month=10)}T120000"}
+{"instruction": "for 1hr", "response": "DTSTART:{ref}\nDURATION:PT1H"}
+{"instruction": "for 1.5hrs", "response": "DTSTART:{ref}\nDURATION:PT1H30M"}
+{"instruction": "for 3hrs", "response": "DTSTART:{ref}\nDURATION:PT3H"}
+{"instruction": "for 2hrs", "response": "DTSTART:{ref}\nDURATION:PT2H"}
+{"instruction": "for 45min", "response": "DTSTART:{ref}\nDURATION:PT45M"}
+{"instruction": "for 30min", "response": "DTSTART:{ref}\nDURATION:PT30M"}
+{"instruction": "for 2.5hrs", "response": "DTSTART:{ref}\nDURATION:PT2H30M"}
+{"instruction": "for 4hrs", "response": "DTSTART:{ref}\nDURATION:PT4H"}
+{"instruction": "for 90min", "response": "DTSTART:{ref}\nDURATION:PT1H30M"}
+{"instruction": "for 15min", "response": "DTSTART:{ref}\nDURATION:PT15M"}
+{"instruction": "for 5hrs", "response": "DTSTART:{ref}\nDURATION:PT5H"}
+{"instruction": "for 75min", "response": "DTSTART:{ref}\nDURATION:PT75M"}
+{"instruction": "for 3.5hrs", "response": "DTSTART:{ref}\nDURATION:PT3H30M"}
+{"instruction": "for 20min", "response": "DTSTART:{ref}\nDURATION:PT20M"}
+{"instruction": "for 6hrs", "response": "DTSTART:{ref}\nDURATION:PT6H"}
+{"instruction": "every 10 minutes between 2 and 7pm", "response": "DTSTART:{ref + (hour=14)}T140000\nRRULE:FREQ=MINUTELY;INTERVAL=10;UNTIL:{ref + (hour=19)}T190000"}
+{"instruction": "between 3 and 4", "response": "DTSTART:{ref + (hour=3)}T030000\nDTEND:{ref + (hour=4)}T040000"}
+{"instruction": "10 tomorrow", "response": "DTSTART:{ref + (days=1)}T100000"}
+{"instruction": "tues at 1", "response": "DTSTART:{ref + (TU)}T010000"}
+{"instruction": "tues at 1am", "response": "DTSTART:{ref + (TU)}T010000"}
+{"instruction": "from 6 til 8pm", "response": "DTSTART:{ref + (hour=18)}T180000\nDTEND:{ref + (hour=20)}T200000"}
+{"instruction": "remind 30m before 10am", "response": "DTSTART:{ref + (hour=10)}T100000\nVALARM:TRIGGER:-PT30M"}
+{"instruction": "from new years day 9am repeat daily", "response": "DTSTART:{ref + (month=1, day=1)}T090000\nRRULE:FREQ=DAILY"}
+{"instruction": "next week friday 445pm", "response": "DTSTART:{ref + (days=1, MO) + (FR)}T164500"}
+{"instruction": "in 2 weeks 4 days", "response": "DTSTART:{ref + (weeks=2, days=4)}"}
+{"instruction": "2 weeks today", "response": "DTSTART:{ref + (weeks=2)}"}
+{"instruction": "monday next week", "response": "DTSTART:{ref + (days=1, MO)}"}
+{"instruction": "thurs in 2 weeks", "response": "DTSTART:{ref + (days=1, MO) + (2TH)}"}
+{"instruction": "next weekday", "response": "DTSTART:{ref + ( (days=1) if ref.weekday == SA else (SA))}"}
+{"instruction": "weekdays 2-4pm", "response": "DTSTART:{ref + ( (days=1) if ref.weekday == SA else (SA))}T140000\nDTEND:{ref + ( (days=1) if ref.weekday == SA else (SA))}T160000\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR"}
+{"instruction": "every fri 2pm except next week", "response": "DTSTART:{ref + ( (days=1) if ref.weekday == SA else (SA))}T140000\nRRULE:FREQ=WEEKLY;BYDAY=FR;EXDATE:{ref + (days=1, MO) + (FR)}"}
+{"instruction": "hourly from 9am to 5pm weekdays", "response": "DTSTART:{ref + ( (days=1) if ref.weekday == SA else (SA))}T090000\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR={range(9, 17)}"}
+{"instruction": "weekends 10am-12pm", "response": "DTSTART:{ref + ((days=1) if ref.weekday == SA else (SA))}T100000\nDTEND:{ref + ((days=1) if ref.weekday == SA else (SA))}T120000"}
+{"instruction": "1wk from now", "response": "DTSTART:{ref + (weeks=1)}"}
+{"instruction": "2wk thursday 10am", "response": "DTSTART:{ref + (TH, weeks=2)}T100000"}
+{"instruction": "tmrw 10am", "response": "DTSTART:{ref + (days=1)}T100000"}
+{"instruction": "next week", "response": "DTSTART:{ref + (days=1, MO)}"}
+{"instruction": "DTFORMAT: DDMMYYYY\n14/06", "response": "DTSTART:{ref + (day=14, month=6)}"}
+{"instruction": "noon", "response": "DTSTART:{ref + (hour=12)}T120000"}
+{"instruction": "DTFORMAT: MMDDYYYY\n12/30 noon", "response": "DTSTART:{ref + (day=30, month=12)}T120000"}
+{"instruction": "noon fri", "response": "DTSTART:{ref + (FR)}T120000"}
+{"instruction": "1230", "response": "DTSTART:{ref + (hour=12, minute=30)}T123000"}
+{"instruction": "Q1 26", "response": "DTSTART:{datetime(2026, 1,1) + (MO)}"}
+{"instruction": "Q4", "response": "DTSTART:{ref + (month=10, MO)}"}
+{"instruction": "Q2 2029", "response": "DTSTART:{datetime(2029, 4,1) + (MO)}"}
+{"instruction": "weekdays minus thursday", "response": "DTSTART:{ref + (**(\n    {'days': 2} if ref.weekday() == WEDNESDAY else\n    {'days': 1} if ref.weekday() < SATURDAY else\n    {'weekday': MO }\n))}\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,FR"}
+{"instruction": "thursdays, mondays and saturdays", "response": "DTSTART:{ref + (**(\n    {'weekday': TH} if ref.weekday() < THURSDAY else\n    {'weekday': SA} if ref.weekday() < SATURDAY else\n    {'weekday': MO}\n))}\nRRULE:FREQ=WEEKLY;BYDAY=MO,TH,SA"}
+{"instruction": "weekends and wednesdays", "response": "DTSTART:{ref + (**(\n    {'weekday': WE} if ref.weekday() < WEDNESDAY else\n    {'weekday': SA} if ref.weekday() < SATURDAY else\n    {'weekday': SU} if ref.weekday() < SUNDAY else\n    {'weekday': WE}\n))}\nRRULE:FREQ=WEEKLY;BYDAY=WE,SA,SU"}
+{"instruction": "every tues and every other mon", "response": "DTSTART:{ref + (**(\n    {'weekday': TU} if ref.weekday() < TUESDAY else\n    {'weekday': MO} if ref.weekday() < MONDAY else\n    {'weekday': TU}\n))}\nRRULE:FREQ=WEEKLY;BYDAY=MO;INTERVAL=2;BYDAY=TU;"}
+{"instruction": "nov 6,7,8 annually 10-12pm", "response": "DTSTART:{ref + (month=11, day=6)}T100000\nDTEND:{ref + (month=11, day=6)}T120000\nRRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=6,7,8"}
+{"instruction": "july 10-14 annually 10-12pm", "response": "DTSTART:{ref + (month=7, day=10)}T100000\nDTEND:{ref + (month=7, day=14)}T120000\nRRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=10,11,12,13,14"}
+{"instruction": "nov 6-8", "response": "DTSTART:{ref + (month=11, day=6)}\nDTEND:{ref + (month=11, day=8)}T235959"}
+{"instruction": "every tues except last week of month", "response": "DTSTART:{ref + (TU)}\nRRULE:FREQ=WEEKLY;BYDAY=TU;EXDATE:{ref + (day=31,-1TU)}"}
+{"instruction": "first mon of next quarter", "response": "DTSTART:{ref.replace(day=1) + (months=4 - month % 3) + (MO)}"}
+{"instruction": "friday on the last week of the quarter", "response": "DTSTART:{ref + (months=3 - month % 3, day = 31, -1FR)}"}
+{"instruction": "the beginning of Q1 Q3 1500", "response": "DTSTART:{ref + (months=3- month % 3, day = 1)}T150000\nRDATE:{ref + (months=3 - month % 3, day = 1)}"}
+{"instruction": "the first mon of Q1-4 10:40", "response": "DTSTART:{ref.replace(month=1, day=1)}T104000\nRDATE:{ref.replace(month=4, day=1)}\nRDATE:{ref.replace(month=7, day=1)}\nRDATE:{ref.replace(month=10, day=1)}"}
+{"instruction": "the second mon of Q1-4 8-9am every year", "response": "DTSTART:{ref.replace(month=1, day=1) + (2MO)}T080000\nRRULE:FREQ=YEARLY;BYMONTH=1,4,7,10;BYDAY=MO;BYSETPOS=2"}
+{"instruction": "quarterly 9am mon on first week", "response": "DTSTART:{ref.replace(month=1, day=1) + (MO)}T090000\nRRULE:FREQ=YEARLY;BYMONTH=1,4,7,10;BYDAY=MO;BYSETPOS=1"}
+{"instruction": "Q2 w3 tuesday 10am", "response": "DTSTART:{ref + (month=4, day=1) + (3TU)}T100000"}
+{"instruction": "last sunday of every month", "response": "DTSTART:{ref + (day = 31, -1SU)}\nRRULE:FREQ=MONTHLY;BYDAY=-1SU"}
+{"instruction": "aug 9th 7pm rem 1hr", "response": "DTSTART:{ref + (day=9, month=8)}T190000\nVALARM:TRIGGER:-PT1H"}
+{"instruction": "last sun feb 0800 2hrs", "response": "DTSTART:{ref + (month=2, day=31, -1SU)}T080000\nDURATION:PT2H"}
+{"instruction": "last fri of june 1pm", "response": "DTSTART:{ref + (month=6, day=31, -1FR)}T130000"}
+{"instruction": "in 4hrs", "response": "DTSTART:{ref + (hours=4)}"}
+{"instruction": "GMT+1 1200", "response": "DTSTART:{ref + (hour=12)}T120000\nTZOFFSETFROM:+0000\nTZOFFSETTO:+0100"}
+{"instruction": "EST+5", "response": "DTSTART:{ref + (hour=5)}T050000\nTZOFFSETFROM:-0500\nTZOFFSETTO:-0400"}
+{"instruction": "2:38pm in hawaii", "response": "DTSTART;TZID=Pacific/Honolulu:{ref + (hour=14, minute=38)}T143800"}
+{"instruction": "8pm EST", "response": "DTSTART;TZID=America/New_York:{ref + (hour=20)}T200000"}
+{"instruction": "9:19am madrid time", "response": "DTSTART;TZID=Europe/Madrid:{ref + (hour=9, minute=19)}"}
+{"instruction": "2pm chile time", "response": "DTSTART;TZID=America/Santiago:{ref + (hour=14)}T140000"}
+{"instruction": "1745+0800", "response": "DTSTART:{ref + (hour=17, minute=45)}T174500\nTZOFFSETTO:+0800"}
+{"instruction": "3 jan 2pm 1hr", "response": "DTSTART:{ref + (day=3, month=1)}T140000\nDURATION:PT1H"}
+{"instruction": "every mon 0700 45mins", "response": "DTSTART:{ref + (MO)}T070000\nDURATION:PT45M"}
+{"instruction": "fri night 8pm till 10:30", "response": "DTSTART:{ref + (FR)}T200000\nDTEND:{ref + (FR)}T223000"}
+{"instruction": "every tues unless 1st week of month", "response": "DTSTART:{ref + (TU)}\nRRULE:FREQ=WEEKLY;BYDAY=TU;EXDATE:{ref + (day=1,TU)}"}
+{"instruction": "every other sat 10-12pm", "response": "DTSTART:{ref + (SA)}T100000\nDTEND:{ref + (SA)}T120000\nRRULE:FREQ=WEEKLY;BYDAY=SA;INTERVAL=2"}
+{"instruction": "every 20 minutes from 3 to 4pm", "response": "DTSTART:{ref + (hour=15)}T150000\nRRULE:FREQ=MINUTELY;INTERVAL=20;UNTIL:{ref + (hour=16)}"}
+{"instruction": "every 15 minutes from 1600-1800 on weekdays", "response": "DTSTART:{ref + ( weekday = MO|TU|WE|TH|FR)}T160000\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYMINUTE=0,15,30,45"}
+{"instruction": "1033 then every 20m until 5pm weekdays", "response": "DTSTART:{ref + ( weekday = MO|TU|WE|TH|FR)}T103300\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR={range(10, 17)};BYMINUTE=13,33,53;"}
+{"instruction": "in 10m", "response": "DTSTART:{ref + (minutes=10)}"}
+{"instruction": "wkly 7pm mon", "response": "DTSTART:{ref + (MO)}T190000\nRRULE:FREQ=WEEKLY;BYDAY=MO;"}
+{"instruction": "15 past the hour every hour from 9-5pm weekdays", "response": "DTSTART:{ref + ( weekday = MO|TU|WE|TH|FR)}T091500\nRRULE:FREQ=HOURLY;BYMINUTE=15;COUNT={17-9};"}
+{"instruction": "every 5 days from now except last 2 weeks of feb", "response": "DTSTART:{ref + (days=5)}\nRRULE:FREQ=DAILY;INTERVAL=5;EXDATE:{ref + (month=2, day=28, -2TU)}"}
+{"instruction": "weekly from 9am today til 5pm in 2 fridays", "response": "DTSTART:{ref}T090000\nRRULE:FREQ=WEEKLY;UNTIL:{ref + (2FR, hour=17)}"}
+{"instruction": "weekly on friday from 18 jun til 20 oct", "response": "DTSTART:{ref + (FR, month=6, day=18)}\nRRULE:FREQ=WEEKLY;BYDAY=FR;UNTIL:{ref + (month=10, day=20)}"}
+{"instruction": "every 2 days for 10 weeks", "response": "DTSTART:{ref + (days=2)}\nRRULE:FREQ=DAILY;INTERVAL=2;UNTIL:{ref + (weeks=10)}"}
+{"instruction": "3pm tuesdays for 2mo", "response": "DTSTART:{ref + (TU)}T150000\nRRULE:FREQ=WEEKLY;BYDAY=TU;UNTIL:{ref + (months=2)}"}
+{"instruction": "every other weekend after jul 1st", "response": "DTSTART:{ref + (month=7, day=1)}\nRRULE:FREQ=WEEKLY;BYDAY=SA,SU;INTERVAL=2"}
+{"instruction": "every 2nd weekday", "response": "DTSTART:{ref + (MO)}\nRRULE:FREQ=WEEKLY;BYDAY=TU,WE,TH;INTERVAL=2"}
+{"instruction": "every 2nd weekend", "response": "DTSTART:{ref + (SA)}\nRRULE:FREQ=WEEKLY;BYDAY=SA,SU;INTERVAL=2"}
+{"instruction": "every tu for 10 times", "response": "DTSTART:{ref + (TU)}\nRRULE:FREQ=WEEKLY;BYDAY=TU;COUNT={10}"}
+{"instruction": "every other day for 19 times", "response": "DTSTART:{ref + (days=2)}\nRRULE:FREQ=DAILY;INTERVAL=2;COUNT={19}"}
+{"instruction": "daily 8am", "response": "DTSTART:{ref + (hour=8)}\nRRULE:FREQ=DAILY"}
+{"instruction": "halloween 9pm", "response": "DTSTART:{ref + (month=10, day=31)}T210000"}
+{"instruction": "christmas eve 2pm", "response": "DTSTART:{ref + (month=12, day=24)}T140000"}
+{"instruction": "every christmas eve", "response": "DTSTART:{ref + (month=12, day=24)}\nRRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=24"}
+{"instruction": "sat 9am, sun 10am, tue 330pm remind 15m before", "response": "DTSTART:{ref + (SA)}T090000\nRDATE:{ref + (SU)}T100000\nRDATE:{ref + (TU)}T153000\nVALARM:TRIGGER:-PT15M"}
+{"instruction": "every 3rd sat of month 9am", "response": "DTSTART:{ref + (day=1, 3SA)}T090000\nRRULE:FREQ=MONTHLY;BYDAY=SA;BYSETPOS=3"}
+{"instruction": "the last weekend of the month 10am", "response": "DTSTART:{ref + (day=31, -1SU|-1SA)}T100000"}
+{"instruction": "last workday of every month 10am", "response": "DTSTART:{ref + (day=31, -1FR|-1TH|-1TU|-1WE|-1MO)}T100000\nRRULE:FREQ=MONTHLY;BYDAY=MO,TU,WE,TH,FR;BYSETPOS=-1"}
+{"instruction": "3rd sat of this month 1035", "response": "DTSTART:{ref.replace(day=1) + (3SA)}T103500"}
+{"instruction": "sem 1 start sept 15\nsem 1 week 3 tues 1010", "response": "DTSTART:{ref.replace(month=9, day=15) + (3TU)}T101000"}
+{"instruction": "this is the 3rd week of sem 1\nweek 5 tues 1149-1300", "response": "DTSTART:{ref - (weeks=2, -1MO) + (5TU)}T114900\nDTEND:{ref - (weeks=2, -1MO) + (5TU)}T130000"}
+{"instruction": "fiscal year starts apr 5\nfiscal week 32 wed 1530", "response": "DTSTART:{ref.replace(month=4, day=5) + (32WE)}T153000"}
+{"instruction": "fiscal year start apr 1\nfirst mon of FY28", "response": "DTSTART:{ref.replace(year=2028, month=4, day=1) + (MO)}"}
+{"instruction": "fiscal year start jan 1\nevery second wed of this fiscal year", "response": "DTSTART:{ref.replace(month=1, day=1) + (2WE)}"}

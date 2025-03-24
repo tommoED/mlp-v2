@@ -1,0 +1,3 @@
+for 1hr
+DTSTART:{ref}
+DURATION:PT1H

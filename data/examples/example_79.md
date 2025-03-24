@@ -1,0 +1,3 @@
+1745+0800
+DTSTART:{ref + reldate(hour=17, minute=45)}T174500
+TZOFFSETTO:+0800

@@ -50,9 +50,18 @@ weekday = SA if ref.weekday() != SATURDAY else None, days = 1 if ref.weekday() =
 weekday = TU|TH
 weekday = TU if ref.weekday() >= THURSDAY else THU
 
+next(weekday=WKDAY)
+relativedelta(days=1, weekday=MO) + relativedelta(weekday=WKDAY)
+# 'next' mon implies monday starting next week, so we add 1 day to the reference time in the case we are already on a monday
+
 quarter = n
 month=((((ref.month - 1) // 3 + n) * 3 + 1)) % 12
 
 
 VALARM:(TRIGGER:.*)
 BEGIN:VALARM\n$1\nACTION=DISPLAY\nEND:VALARM# Substitutions
+
+
+# Replace -3MO with weekday=MO(-3)
+([MOTUWEHFRSAU]{2})\((-?\d+)\)
+weekday=$1($2)

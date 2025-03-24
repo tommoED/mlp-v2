@@ -1,0 +1,743 @@
+917 mon
+DTSTART:{ref + reldate(weekday=MO(1))}T091700
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+14:23 tue
+DTSTART:{ref + reldate(weekday=TU(1))}T142300
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+1630pm wed
+DTSTART:{ref + reldate(weekday=WE(1))}T163000
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+1023am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T102300
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+915am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T091500
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+658am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T065800
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+1159am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T115900
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+103pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T130300
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+217pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T141700
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+349pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T154900
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+406pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T160600
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+522pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T172200
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+638pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T183800
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+754pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T195400
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+811pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T201100
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+927pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T212700
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+1043pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T224300
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+1100pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T230000
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+1216am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T001600
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+132am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T013200
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+248am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T024800
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+305am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T030500
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+421am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T042100
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+537am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T053700
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+801am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T080100
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+111am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T011100
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+233am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T023300
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+355am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T035500
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+517am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T051700
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+639am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T063900
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+701pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T190100
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+823pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T202300
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+945pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T214500
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+1107pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T230700
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+129am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T012900
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+251am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T025100
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+413am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T041300
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+535am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T053500
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+657am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T065700
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+819am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T081900
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+941am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T094100
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+1103am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T110300
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+1225am thu
+DTSTART:{ref + reldate(weekday=TH(1))}T002500
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+147pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T134700
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+309pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T150900
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+431pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T163100
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+553pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T175300
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+715pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T191500
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+837pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T203700
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+959pm thu
+DTSTART:{ref + reldate(weekday=TH(1))}T215900
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+12:12pm fri
+DTSTART:{ref + reldate(weekday=FR(1))}T121200
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+1503 sat
+DTSTART:{ref + reldate(weekday=SA(1))}T150300
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+18:30 sun
+DTSTART:{ref + reldate(weekday=SU(1))}T183000
+RRULE:FREQ=WEEKLY;BYDAY=SU;
+
+1119am mon
+DTSTART:{ref + reldate(weekday=MO(1))}T111900
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+08:41 tue
+DTSTART:{ref + reldate(weekday=TU(1))}T084100
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+1328 wed
+DTSTART:{ref + reldate(weekday=WE(1))}T132800
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+1730 thu
+DTSTART:{ref + reldate(weekday=TH(1))}T173000
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+0952am fri
+DTSTART:{ref + reldate(weekday=FR(1))}T095200
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+14:00 sat
+DTSTART:{ref + reldate(weekday=SA(1))}T140000
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+1006 sun
+DTSTART:{ref + reldate(weekday=SU(1))}T100600
+RRULE:FREQ=WEEKLY;BYDAY=SU;
+
+1658pm mon
+DTSTART:{ref + reldate(weekday=MO(1))}T165800
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+12:30 tue
+DTSTART:{ref + reldate(weekday=TU(1))}T123000
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+830 wed
+DTSTART:{ref + reldate(weekday=WE(1))}T083000
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+15:14 thu
+DTSTART:{ref + reldate(weekday=TH(1))}T151400
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+1847 fri
+DTSTART:{ref + reldate(weekday=FR(1))}T184700
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+1129am sat
+DTSTART:{ref + reldate(weekday=SA(1))}T112900
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+14:00pm sun
+DTSTART:{ref + reldate(weekday=SU(1))}T140000
+RRULE:FREQ=WEEKLY;BYDAY=SU;
+
+730 mon
+DTSTART:{ref + reldate(weekday=MO(1))}T073000
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+1711 tue
+DTSTART:{ref + reldate(weekday=TU(1))}T171100
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+1200pm wed
+DTSTART:{ref + reldate(weekday=WE(1))}T120000
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+0933 thu
+DTSTART:{ref + reldate(weekday=TH(1))}T093300
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+15:30 fri
+DTSTART:{ref + reldate(weekday=FR(1))}T153000
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+0809 sat
+DTSTART:{ref + reldate(weekday=SA(1))}T080900
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+sun 1700
+DTSTART:{ref + reldate(weekday=SU(1))}T170000
+RRULE:FREQ=WEEKLY;BYDAY=SU;
+
+mon 1330
+DTSTART:{ref + reldate(weekday=MO(1))}T133000
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+tue 1054am
+DTSTART:{ref + reldate(weekday=TU(1))}T105400
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+wed 1530
+DTSTART:{ref + reldate(weekday=WE(1))}T153000
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+thu 1130am
+DTSTART:{ref + reldate(weekday=TH(1))}T113000
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+fri 830
+DTSTART:{ref + reldate(weekday=FR(1))}T083000
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+sat 1630
+DTSTART:{ref + reldate(weekday=SA(1))}T163000
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+sun 0948am
+DTSTART:{ref + reldate(weekday=SU(1))}T094800
+RRULE:FREQ=WEEKLY;BYDAY=SU;
+
+mon 15:00
+DTSTART:{ref + reldate(weekday=MO(1))}T150000
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+tue 0921
+DTSTART:{ref + reldate(weekday=TU(1))}T092100
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+wed 1730
+DTSTART:{ref + reldate(weekday=WE(1))}T173000
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+thu 1400
+DTSTART:{ref + reldate(weekday=TH(1))}T140000
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+fri 1030am
+DTSTART:{ref + reldate(weekday=FR(1))}T103000
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+sat 13:36
+DTSTART:{ref + reldate(weekday=SA(1))}T133600
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+sun 1600
+DTSTART:{ref + reldate(weekday=SU(1))}T160000
+RRULE:FREQ=WEEKLY;BYDAY=SU;
+
+mon 0800am
+DTSTART:{ref + reldate(weekday=MO(1))}T080000
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+tue 1530
+DTSTART:{ref + reldate(weekday=TU(1))}T153000
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+wed 1100
+DTSTART:{ref + reldate(weekday=WE(1))}T110000
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+thu 1630
+DTSTART:{ref + reldate(weekday=TH(1))}T163000
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+fri 1300
+DTSTART:{ref + reldate(weekday=FR(1))}T130000
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+sat 0900
+DTSTART:{ref + reldate(weekday=SA(1))}T090000
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+sun 1230
+DTSTART:{ref + reldate(weekday=SU(1))}T123000
+RRULE:FREQ=WEEKLY;BYDAY=SU;
+
+mon 1730
+DTSTART:{ref + reldate(weekday=MO(1))}T173000
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+tue 1430
+DTSTART:{ref + reldate(weekday=TU(1))}T143000
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+wed 1000
+DTSTART:{ref + reldate(weekday=WE(1))}T100000
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+thu 1530
+DTSTART:{ref + reldate(weekday=TH(1))}T153000
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+fri 1200
+DTSTART:{ref + reldate(weekday=FR(1))}T120000
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+sat 0800
+DTSTART:{ref + reldate(weekday=SA(1))}T080000
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+sun 1130
+DTSTART:{ref + reldate(weekday=SU(1))}T113000
+RRULE:FREQ=WEEKLY;BYDAY=SU;
+
+mon 1630
+DTSTART:{ref + reldate(weekday=MO(1))}T163000
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+tue 1330
+DTSTART:{ref + reldate(weekday=TU(1))}T133000
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+wed 0900
+DTSTART:{ref + reldate(weekday=WE(1))}T090000
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+thu 1430
+DTSTART:{ref + reldate(weekday=TH(1))}T143000
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+fri 1100
+DTSTART:{ref + reldate(weekday=FR(1))}T110000
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+sat 1700
+DTSTART:{ref + reldate(weekday=SA(1))}T170000
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+sun 1030
+DTSTART:{ref + reldate(weekday=SU(1))}T103000
+RRULE:FREQ=WEEKLY;BYDAY=SU;
+
+mon 1530
+DTSTART:{ref + reldate(weekday=MO(1))}T153000
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+tue 1230
+DTSTART:{ref + reldate(weekday=TU(1))}T123000
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+wed 0800
+DTSTART:{ref + reldate(weekday=WE(1))}T080000
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+thu 1330
+DTSTART:{ref + reldate(weekday=TH(1))}T133000
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+fri 1000
+DTSTART:{ref + reldate(weekday=FR(1))}T100000
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+sat 1600
+DTSTART:{ref + reldate(weekday=SA(1))}T160000
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+sun 0930
+DTSTART:{ref + reldate(weekday=SU(1))}T093000
+RRULE:FREQ=WEEKLY;BYDAY=SU;
+
+mon 1430
+DTSTART:{ref + reldate(weekday=MO(1))}T143000
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+tue 1130
+DTSTART:{ref + reldate(weekday=TU(1))}T113000
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+wed 1700
+DTSTART:{ref + reldate(weekday=WE(1))}T170000
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+thu 1230
+DTSTART:{ref + reldate(weekday=TH(1))}T123000
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+fri 0900
+DTSTART:{ref + reldate(weekday=FR(1))}T090000
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+sat 1500
+DTSTART:{ref + reldate(weekday=SA(1))}T150000
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+sun 0830
+DTSTART:{ref + reldate(weekday=SU(1))}T083000
+RRULE:FREQ=WEEKLY;BYDAY=SU;
+
+mon 1330
+DTSTART:{ref + reldate(weekday=MO(1))}T133000
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+tue 1030
+DTSTART:{ref + reldate(weekday=TU(1))}T103000
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+wed 1600
+DTSTART:{ref + reldate(weekday=WE(1))}T160000
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+thu 1130
+DTSTART:{ref + reldate(weekday=TH(1))}T113000
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+fri 1700
+DTSTART:{ref + reldate(weekday=FR(1))}T170000
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+sat 1400
+DTSTART:{ref + reldate(weekday=SA(1))}T140000
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+sun 0730
+DTSTART:{ref + reldate(weekday=SU(1))}T073000
+RRULE:FREQ=WEEKLY;BYDAY=SU;
+
+mon 1230
+DTSTART:{ref + reldate(weekday=MO(1))}T123000
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+tue 0930
+DTSTART:{ref + reldate(weekday=TU(1))}T093000
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+wed 1500
+DTSTART:{ref + reldate(weekday=WE(1))}T150000
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+thu 1030
+DTSTART:{ref + reldate(weekday=TH(1))}T103000
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+fri 1600
+DTSTART:{ref + reldate(weekday=FR(1))}T160000
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+sat 1300
+DTSTART:{ref + reldate(weekday=SA(1))}T130000
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+sun 0630
+DTSTART:{ref + reldate(weekday=SU(1))}T063000
+RRULE:FREQ=WEEKLY;BYDAY=SU;
+
+mon 1130
+DTSTART:{ref + reldate(weekday=MO(1))}T113000
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+tue 0830
+DTSTART:{ref + reldate(weekday=TU(1))}T083000
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+wed 1400
+DTSTART:{ref + reldate(weekday=WE(1))}T140000
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+thu 0930
+DTSTART:{ref + reldate(weekday=TH(1))}T093000
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+fri 1500
+DTSTART:{ref + reldate(weekday=FR(1))}T150000
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+sat 1200
+DTSTART:{ref + reldate(weekday=SA(1))}T120000
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+sun 1730
+DTSTART:{ref + reldate(weekday=SU(1))}T173000
+RRULE:FREQ=WEEKLY;BYDAY=SU;
+
+mon 1030
+DTSTART:{ref + reldate(weekday=MO(1))}T103000
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+tue 1600
+DTSTART:{ref + reldate(weekday=TU(1))}T160000
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+wed 1300
+DTSTART:{ref + reldate(weekday=WE(1))}T130000
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+thu 0830
+DTSTART:{ref + reldate(weekday=TH(1))}T083000
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+fri 1400
+DTSTART:{ref + reldate(weekday=FR(1))}T140000
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+sat 1100
+DTSTART:{ref + reldate(weekday=SA(1))}T110000
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+sun 1630
+DTSTART:{ref + reldate(weekday=SU(1))}T163000
+RRULE:FREQ=WEEKLY;BYDAY=SU;
+
+mon 0930
+DTSTART:{ref + reldate(weekday=MO(1))}T093000
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+tue 1500
+DTSTART:{ref + reldate(weekday=TU(1))}T150000
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+wed 1200
+DTSTART:{ref + reldate(weekday=WE(1))}T120000
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+thu 1730
+DTSTART:{ref + reldate(weekday=TH(1))}T173000
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+fri 1300
+DTSTART:{ref + reldate(weekday=FR(1))}T130000
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+sat 1000
+DTSTART:{ref + reldate(weekday=SA(1))}T100000
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+sun 1530
+DTSTART:{ref + reldate(weekday=SU(1))}T153000
+RRULE:FREQ=WEEKLY;BYDAY=SU;
+
+mon 1600
+DTSTART:{ref + reldate(weekday=MO(1))}T160000
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+tue 1300
+DTSTART:{ref + reldate(weekday=TU(1))}T130000
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+wed 0830
+DTSTART:{ref + reldate(weekday=WE(1))}T083000
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+thu 1400
+DTSTART:{ref + reldate(weekday=TH(1))}T140000
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+fri 1030
+DTSTART:{ref + reldate(weekday=FR(1))}T103000
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+sat 1630
+DTSTART:{ref + reldate(weekday=SA(1))}T163000
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+sun 0900
+DTSTART:{ref + reldate(weekday=SU(1))}T090000
+RRULE:FREQ=WEEKLY;BYDAY=SU;
+
+mon 1500
+DTSTART:{ref + reldate(weekday=MO(1))}T150000
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+tue 1200
+DTSTART:{ref + reldate(weekday=TU(1))}T120000
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+wed 1730
+DTSTART:{ref + reldate(weekday=WE(1))}T173000
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+thu 1300
+DTSTART:{ref + reldate(weekday=TH(1))}T130000
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+fri 0930
+DTSTART:{ref + reldate(weekday=FR(1))}T093000
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+sat 1530
+DTSTART:{ref + reldate(weekday=SA(1))}T153000
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+sun 0800
+DTSTART:{ref + reldate(weekday=SU(1))}T080000
+RRULE:FREQ=WEEKLY;BYDAY=SU;
+
+mon 1300
+DTSTART:{ref + reldate(weekday=MO(1))}T130000
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+tue 1000
+DTSTART:{ref + reldate(weekday=TU(1))}T100000
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+wed 1530
+DTSTART:{ref + reldate(weekday=WE(1))}T153000
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+thu 1100
+DTSTART:{ref + reldate(weekday=TH(1))}T110000
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+fri 1630
+DTSTART:{ref + reldate(weekday=FR(1))}T163000
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+sat 1330
+DTSTART:{ref + reldate(weekday=SA(1))}T133000
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+sun 0600
+DTSTART:{ref + reldate(weekday=SU(1))}T060000
+RRULE:FREQ=WEEKLY;BYDAY=SU;
+
+mon 1100
+DTSTART:{ref + reldate(weekday=MO(1))}T110000
+RRULE:FREQ=WEEKLY;BYDAY=MO;
+
+tue 0800
+DTSTART:{ref + reldate(weekday=TU(1))}T080000
+RRULE:FREQ=WEEKLY;BYDAY=TU;
+
+wed 1330
+DTSTART:{ref + reldate(weekday=WE(1))}T133000
+RRULE:FREQ=WEEKLY;BYDAY=WE;
+
+thu 0900
+DTSTART:{ref + reldate(weekday=TH(1))}T090000
+RRULE:FREQ=WEEKLY;BYDAY=TH;
+
+fri 1430
+DTSTART:{ref + reldate(weekday=FR(1))}T143000
+RRULE:FREQ=WEEKLY;BYDAY=FR;
+
+sat 1130
+DTSTART:{ref + reldate(weekday=SA(1))}T113000
+RRULE:FREQ=WEEKLY;BYDAY=SA;
+
+sun 1700
+DTSTART:{ref + reldate(weekday=SU(1))}T170000
+

@@ -1,0 +1,1011 @@
+[
+  {
+    "user_request": "every wed 2pm",
+    "summary": "Weekly Afternoon Meeting",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=WE(1))}T140000",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=WE;"
+    }
+  },
+  {
+    "user_request": "thursday in 2 weeks",
+    "summary": "Event on Thursday, Two Weeks from Now",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weeks=2, weekday=TH(1))}"
+    }
+  },
+  {
+    "user_request": "Can I book a meeting on wed 1st oct at 3pm?",
+    "summary": "Wed, Oct 1st 3PM Meeting",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(day=1, month=10, weekday=WE(1))}"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event '2-3:30pm last fri of month'. Please book it accordingly.",
+    "summary": "Monthly Afternoon Gathering - Last Friday at 2:30 PM",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(day=31, weekday=FR(-1))}T140000",
+      "DTEND": "DTEND:{ref + relativedelta(day=31, weekday=FR(-1))}T153000"
+    }
+  },
+  {
+    "user_request": "5-6pm tuesday",
+    "summary": "Meeting scheduled for 5-6 PM on Tuesday",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=TU(1))}T170000",
+      "DTEND": "DTEND:{ref + relativedelta(weekday=TU(1))}T180000",
+      "DURATION": "DURATION:PT2H"
+    }
+  },
+  {
+    "user_request": "Tues 10am for 2h",
+    "summary": "Tuesday Morning 2-Hour Meeting",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=TU(1))}T100000"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event every weekday from 9am to 10am.",
+    "summary": "Weekly Morning Session",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=MO(1))}T090000",
+      "DTEND": "DTEND:{ref + relativedelta(weekday=MO(1))}T100000",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR"
+    }
+  },
+  {
+    "user_request": "1030 mon, wed & sat 3h",
+    "summary": "Event scheduled for 10:30 AM every Monday, Wednesday, and Saturday lasting 3 hours",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=MO(1))}T103000",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=MO,WE,SA",
+      "DURATION": "DURATION:PT3H"
+    }
+  },
+  {
+    "user_request": "next sat, mon, wed 905-1330",
+    "summary": "Next Sat Mon Wed 9 AM to 1 PM Event",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=MO) + relativedelta(weekday=SA)}T090500",
+      "DTEND": "DTEND:{ref + relativedelta(weekday=MO) + relativedelta(weekday=SA)}T133000",
+      "RDATE": "RDATE:{ref + relativedelta(weekday=MO) + relativedelta(weekday=SA) + relativedelta(weekday=MO)}T090500\\n RDATE:{ref + relativedelta(weekday=MO) + relativedelta(weekday=SA) + relativedelta(weekday=MO) + relativedelta(weekday=WE)}T090500"
+    }
+  },
+  {
+    "user_request": {
+      "speak": "I want to schedule a meeting for next Monday at 3 PM.",
+      "type": "next mon at 15:00"
+    },
+    "summary": "Meeting scheduled for Next Monday, 3 PM",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(days=1, weekday=MO)}"
+    }
+  },
+  {
+    "user_request": "I would like to schedule an event for next week. Can you help me with that? I'm thinking of having it on a Tuesday afternoon, around 3 PM.",
+    "summary": "Next Week Tuesday Afternoon Meeting",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(days=1, weekday=MO)}"
+    }
+  },
+  {
+    "user_request": {
+      "date_and_time_pattern": [
+        "16/08 1245-4pm",
+        "August 16, 2023 from 12:45 PM to 4:00 PM",
+        "Wed, Aug 16, 2023 12:45 PM - 4:00 PM",
+        "16th August 2023 between 12:45 PM and 4 PM"
+      ],
+      "event_description": "This is a meeting for strategic planning with key stakeholders. It will focus on reviewing the current projects, setting new goals, and discussing upcoming challenges."
+    },
+    "summary": "Strategic Planning Meeting - August 16th, 2023",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(day=16, month=8)}T124500",
+      "DTEND": "DTEND:{ref + relativedelta(day=16, month=8)}T160000",
+      "DTFORMAT": "DTFORMAT: en-UK"
+    }
+  },
+  {
+    "user_request": "I need to schedule a meeting on 12/25, can you help me with that? Also, is December 25th available? And what about December twenty-fifth or Christmas Eve?",
+    "summary": "Christmas Eve Meeting",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(day=25, month=12)}",
+      "DTEND": "DTEND:{ref + relativedelta(day=25+1, month=12)}",
+      "DTFORMAT": "DTFORMAT: en-US"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event in 2 days. I'm not sure about the exact date and time yet, but I'll let you know.",
+    "summary": "Event in Two Days",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(days=2)}"
+    }
+  },
+  {
+    "user_request": {
+      "requests": [
+        "I want to schedule an event in 2 days at 10am.",
+        "Can you book something for me two days from now at 10 AM?",
+        "Hey, could you set up a meeting in two days at ten o'clock in the morning?"
+      ],
+      "summary": "Event Scheduled for Two Days Later at 10 AM"
+    },
+    "description": {
+      "details": "This event is intended to be a collaborative session where team members can discuss upcoming projects and allocate responsibilities. The primary goal of this meeting is to ensure that all members are aligned with the project goals and understand their roles before moving forward. The meeting will also include a brief review of previous weeks' activities to reinforce understanding."
+    },
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(days=2)}T100000"
+    }
+  },
+  {
+    "user_request": "next tuesday",
+    "summary": "Next Tuesday Event Summary",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(days=1, weekday=MO) + relativedelta(weekday=TU)}"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event on the first Monday of February. Can you suggest some times?",
+    "summary": "Event Scheduled for First Monday of February",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(month=2, weekday=MO(1))}"
+    }
+  },
+  {
+    "user_request": "Please schedule an event for '3rd june' with various ways of typing and saying the date and time.",
+    "summary": "Event on Third June",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(day=3, month=6)}"
+    }
+  },
+  {
+    "user_request": {
+      "various_date_time_entries": [
+        "June 3",
+        "06-03",
+        "June third",
+        "Jun 3rd",
+        "I want to schedule an event for June the 3rd at 2 PM.",
+        "Let's book it on June 3, afternoon."
+      ],
+      "description": "This scenario involves scheduling a user-requested event on June 3rd. The date is mentioned in various formats including full month names with and without ordinal indicators, numeric date formats, and natural language expressions. Additionally, the request includes specifying a preferred time for the event in the afternoon."
+    },
+    "summary": {
+      "title": "June 3 Event"
+    },
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(day=3, month=6)}"
+    }
+  },
+  {
+    "user_request": "I want to schedule a meeting for 1hr starting at 3 PM tomorrow.",
+    "summary": "Meeting Scheduled for Tomorrow at 3 PM, Duration: 1 Hour",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref}",
+      "DURATION": "DURATION:PT1H"
+    }
+  },
+  {
+    "user_request": "I want to book a meeting for 1.5hrs on Friday afternoon.",
+    "summary": "Meeting Scheduled for 1.5 Hours on Friday Afternoon",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref}",
+      "DURATION": "DURATION:PT1H30M"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event that lasts for 3hrs. Can you suggest a date and time?",
+    "summary": "3-Hour Event Schedule",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref}",
+      "DURATION": "DURATION:PT3H"
+    }
+  },
+  {
+    "user_request": "I want to set up an event to run every 10 minutes between 2 PM and 7 PM.",
+    "summary": "Recurring Event - Occurring Every 10 Minutes from 2 PM to 7 PM",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(hour=14)}T140000",
+      "RRULE": "RRULE:FREQ=MINUTELY;INTERVAL=10;UNTIL:{ref + relativedelta(hour=19)}T190000"
+    }
+  },
+  {
+    "user_request": "I need to schedule an event between 3 and 4 PM.",
+    "summary": "Afternoon Get-Together",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(hour=3)}T030000",
+      "DTEND": "DTEND:{ref + relativedelta(hour=4)}T040000"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event '10 tomorrow'. Could you please set it up? Also, provide some variations on how I could have requested this and a brief description of what this event might be about.",
+    "summary": "Event at 10 AM Tomorrow",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(days=1)}T100000"
+    }
+  },
+  {
+    "user_request": "tues at 1",
+    "summary": "Tuesday 1 PM Meeting",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=TU(1))}T010000"
+    }
+  },
+  {
+    "user_request": [
+      "tues at 1am",
+      "schedule something on tuesday morning at one am",
+      "i want to book a meeting on tue at 01:00 AM"
+    ],
+    "summary": "Tuesday Midnight Meeting",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=TU(1))}T010000"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event 'from 6 til 8pm'. Can you please help me with that?",
+    "summary": "Evening Event Scheduling Request",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(hour=18)}T180000",
+      "DTEND": "DTEND:{ref + relativedelta(hour=20)}T200000"
+    }
+  },
+  {
+    "user_request": "remind 30m before 10am",
+    "summary": "Meeting Reminder at 9:30 AM",
+    "description": "This is a reminder event set for an important meeting scheduled for 10:00 AM. Users are advised to prepare and ensure they arrive on time by setting this reminder half an hour prior to the start of the meeting.",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(hour=10)}T100000",
+      "VALARM": "VALARM:TRIGGER:-PT30M"
+    }
+  },
+  {
+    "user_request": "from new years day 9am repeat daily",
+    "summary": "Daily Morning New Year's Kickoff",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(month=1, day=1)}T090000",
+      "RRULE": "RRULE:FREQ=DAILY"
+    }
+  },
+  {
+    "user_request": "next week friday 445pm",
+    "summary": "Next Week Friday Evening Event",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(days=1, weekday=MO) + relativedelta(weekday=FR)}T164500"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event in 2 weeks 4 days from now. How can I do that?",
+    "summary": "Event in 2 Weeks and 4 Days",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weeks=2, days=4)}"
+    }
+  },
+  {
+    "user_request": {
+      "variations": [
+        "I need to book something two weeks from today.",
+        "Can you set up a meeting 2 weeks ahead?",
+        "How about scheduling an event for 14 days from now?",
+        "I want to plan an activity in exactly two weeks."
+      ],
+      "description": "The user is looking to schedule an event or meeting that is scheduled 14 days from the current date. The request does not specify a particular time but rather a duration and timing based on the current day."
+    },
+    "summary": {
+      "title": "Event Scheduled for Two Weeks Today"
+    },
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weeks=2)}"
+    }
+  },
+  {
+    "user_request": {
+      "various_date_time_inputs": [
+        "monday next week",
+        "next monday, at 10 AM",
+        "schedule a meeting on Monday of next week for 2 PM",
+        "i want to have an event on the following monday, any time between 3 and 5 PM will work"
+      ]
+    },
+    "summary": {
+      "title": "Event: Next Monday's Schedule"
+    },
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(days=1, weekday=MO)}"
+    }
+  },
+  {
+    "user_request": "Can I book a meeting 'thurs in 2 weeks'?",
+    "summary": "Thursdays Meeting in Two Weeks",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(days=1, weekday=MO) + relativedelta(weekday=TH(2))}"
+    }
+  },
+  {
+    "user_request": "I want to schedule a meeting on the next weekday at 10 AM.",
+    "summary": "Next Weekday Meeting at 10 AM",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta( (days=1) if ref.weekday == SA else (weekday=SA))}"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event for weekdays from 2-4pm.",
+    "summary": "Weekday Afternoon Session: 2 PM to 4 PM",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta( (days=1) if ref.weekday == SA else (weekday=SA))}T140000",
+      "DTEND": "DTEND:{ref + relativedelta( (days=1) if ref.weekday == SA else (weekday=SA))}T160000",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR"
+    }
+  },
+  {
+    "user_request": "every fri 2pm except next week",
+    "summary": "Weekly Afternoon Meeting Every Friday at 2 PM, Excluding Next Week",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta( (days=1) if ref.weekday == SA else (weekday=SA))}T140000",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=FR;EXDATE:{ref + relativedelta(days=1, weekday=MO) + relativedelta(weekday=FR)}"
+    }
+  },
+  {
+    "user_request": "hourly from 9am to 5pm weekdays",
+    "summary": "Daily Hourly Schedule from 9 AM to 5 PM Weekdays",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta( (days=1) if ref.weekday == SA else (weekday=SA))}T090000",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR={range(9, 17)}"
+    }
+  },
+  {
+    "user_request": "I want to schedule a meeting on weekends from 10 am to 12 pm.",
+    "summary": "Weekend Morning Meeting",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta((days=1) if ref.weekday == SA else (weekday=SA))}T100000",
+      "DTEND": "DTEND:{ref + relativedelta((days=1) if ref.weekday == SA else (weekday=SA))}T120000"
+    }
+  },
+  {
+    "user_request": "1wk from now",
+    "summary": "Event scheduled one week from today",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weeks=1)}"
+    }
+  },
+  {
+    "user_request": "2wk thursday 10am",
+    "summary": "Event scheduled for two weeks Thursday at 10 AM",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=TH(1), weeks=2)}T100000"
+    }
+  },
+  {
+    "user_request": {
+      "tmrw_10am_meeting": [
+        "schedule tmrw at 10 am",
+        "book me an appointment for 10 in the morning tomorrow",
+        "set a meeting for tuesday at 10 o'clock"
+      ]
+    },
+    "summary": {
+      "title": "Meeting Scheduled for Tomorrow at 10 AM"
+    },
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(days=1)}T100000"
+    }
+  },
+  {
+    "user_request": {
+      "saying": "I want to schedule a meeting next week.",
+      "typing": "next week"
+    },
+    "summary": "Next Week Meeting Schedule",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(days=1, weekday=MO)}"
+    }
+  },
+  {
+    "user_request": "I need to schedule an event on 14/06, at either 10 AM or 2 PM. I'm not sure about the time yet.",
+    "summary": "Event Schedule for June 14th",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(day=14, month=6)}",
+      "DTFORMAT": "DTFORMAT: en-UK"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event for noon.",
+    "summary": "Event at Noon",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(hour=12)}T120000"
+    }
+  },
+  {
+    "user_request": {
+      "requests": [
+        "I want to book a meeting on December 30 at noon.",
+        "Can you schedule an event for me on 12/30 at noon please?",
+        "I need a reminder set for the 30th of December, noon time."
+      ],
+      "summary": "Event Schedule: Dec 30 Noon"
+    },
+    "description": {
+      "event_title": "Holiday Planning Meeting",
+      "details": "This meeting is crucial for discussing the upcoming holiday plans and finalizing the schedule. It's important to have all team members present by noon on December 30th to ensure all necessary topics are covered."
+    },
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(day=30, month=12)}T120000",
+      "DTFORMAT": "DTFORMAT: en-US"
+    }
+  },
+  {
+    "user_request": "noon fri",
+    "summary": "Lunch on Friday",
+    "description": "This event is scheduled for noon on a Friday. It provides an opportunity for team members or colleagues to gather and share updates informally, often fostering better communication and camaraderie within the work environment.",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=FR(1))}T120000"
+    }
+  },
+  {
+    "user_request": "Can I book an event on 1230? Also, is it possible to set a reminder for that day at 14:00? I mean the 15th of March.",
+    "summary": "Event scheduled for March 15, 2023, at 14:00",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(hour=12, minute=30)}T123000"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event for Q1 26, can you help me?",
+    "summary": "Event scheduled in Quarter 1 on day 26",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{datetime(2026, 1,1) + relativedelta(weekday=MO)}"
+    }
+  },
+  {
+    "user_request": {
+      "question": "I want to schedule an event in Q4.",
+      "variations": [
+        "Can you help me set up something for Q4?",
+        "I need to arrange an event during the fourth quarter.",
+        "Would it be possible to plan an occasion for the last part of the year?",
+        "I am looking to book a slot in the final quarter."
+      ]
+    },
+    "summary": {
+      "title": "Q4 Event Planning",
+      "description": "This event is scheduled for any time within the fourth quarter, which typically corresponds to October, November, and December. The purpose of this summary is to provide a brief overview of an upcoming occasion that will take place during these months."
+    },
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(month=10, weekday=MO)}"
+    }
+  },
+  {
+    "user_request": {
+      "typed": "I would like to book an event for Q2 2029",
+      "spoken": [
+        "Can you schedule an event in quarter two of 2029?",
+        "I want to arrange something for the second quarter of 2029",
+        "Could you set up a meeting or event during Q2, year 2029?"
+      ]
+    },
+    "summary": {
+      "title": "Q2 2029 Event Summary"
+    },
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{datetime(2029, 4,1) + relativedelta(weekday=MO)}"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event for weekdays minus Thursday. I'm flexible about the time, so suggest any time that works on Monday, Tuesday, Wednesday, or Friday.",
+    "summary": "Weekday Event Excluding Thursday",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(**( {'days': 2} if ref.weekday() == WEDNESDAY else {'days': 1} if ref.weekday() < SATURDAY else {'weekday': MO } ))}",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,FR"
+    }
+  },
+  {
+    "user_request": "I want to schedule a recurring event on Thursdays, Mondays and Saturdays. Can you help me with that? I would like to set up the time for each of these days as follows: Monday at 10 AM, Thursday at 4 PM, and Saturday at 2 PM.",
+    "summary": "Recurring Weekly Event Schedule - MTS",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(**( {'weekday': TH} if ref.weekday() < THURSDAY else {'weekday': SA} if ref.weekday() < SATURDAY else {'weekday': MO} ))}",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=MO,TH,SA"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event for weekends and wednesdays",
+    "summary": "Weekend and Wednesday Event",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(**( {'weekday': WE} if ref.weekday() < WEDNESDAY else {'weekday': SA} if ref.weekday() < SATURDAY else {'weekday': SU} if ref.weekday() < SUNDAY else {'weekday': WE} ))}",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=WE,SA,SU"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event every Tuesday and every other Monday. Can you help me with that?",
+    "summary": "Weekly Event on Tuesdays and Every Other Monday",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(**( {'weekday': TU} if ref.weekday() < TUESDAY else {'weekday': MO} if ref.weekday() < MONDAY else {'weekday': TU} ))}",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=MO;INTERVAL=2;BYDAY=TU;"
+    }
+  },
+  {
+    "user_request": "nov 6,7,8 annually 10-12pm",
+    "summary": "Annual Evening Event on November 6th, 7th, and 8th from 10 PM to 12 AM",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(month=11, day=6)}T100000",
+      "DTEND": "DTEND:{ref + relativedelta(month=11, day=6)}T120000",
+      "RRULE": "RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=6,7,8"
+    }
+  },
+  {
+    "user_request": "july 10-14 annually 10-12pm",
+    "summary": "Annual July Night Events from 10 PM to 12 AM",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(month=7, day=10)}T100000",
+      "DTEND": "DTEND:{ref + relativedelta(month=7, day=14)}T120000",
+      "RRULE": "RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=10,11,12,13,14"
+    }
+  },
+  {
+    "user_request": "nov 6-8",
+    "summary": "Nov Event 2023",
+    "description": "The event scheduled from November 6th to November 8th is an annual gathering designed to foster collaboration and innovation within the community. This year, attendees can expect a series of workshops, presentations, and networking opportunities aimed at sharing knowledge and experiences in various fields. The event will also feature keynote speakers who will discuss trending topics and provide insights into future trends.",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(month=11, day=6)}",
+      "DTEND": "DTEND:{ref + relativedelta(month=11, day=8)}T235959"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event every Tuesday except the last week of each month.",
+    "summary": "Monthly Tuesday Event Excluding Last Week",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=TU(1))}",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=TU;EXDATE:{ref + relativedelta(day=31,weekday=TU(-1))}"
+    }
+  },
+  {
+    "user_request": {
+      "type1": "I want to schedule a meeting for the first Monday of next quarter.",
+      "type2": "Could you please book my appointment on the very first Monday in the upcoming quarter?",
+      "type3": "I need an event set up for the initial Monday of the following three months.",
+      "type4": "Can you create a calendar entry for me on the earliest Monday of the next quarter?"
+    },
+    "summary": "First Mon Next Qtr Meeting",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref.replace(day=1) + relativedelta(months=4 - month % 3) + relativedelta(weekday=MO)}"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event for Friday on the last week of the quarter. Please provide various ways of typing and saying the date and time.",
+    "summary": "Quarterly Close Review - Last Friday",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(months=3 - month % 3, day = 31, weekday=FR(-1))}"
+    }
+  },
+  {
+    "user_request": "the first mon of Q1-4 10:40",
+    "summary": "Q1-Q4 First Monday at 10:40 AM Event",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref.replace(month=1, day=1)}T104000",
+      "RDATE": "RDATE:{ref.replace(month=4, day=1)}; RDATE:{ref.replace(month=7, day=1)}\\n RDATE:{ref.replace(month=10, day=1)}"
+    }
+  },
+  {
+    "user_request": "the second mon of Q1-4 8-9am every year",
+    "summary": "Quarterly Morning Meeting",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref.replace(month=1, day=1) + relativedelta(weekday=MO(2))}T080000",
+      "RRULE": "RRULE:FREQ=YEARLY;BYMONTH=1,4,7,10;BYDAY=MO;BYSETPOS=2"
+    }
+  },
+  {
+    "user_request": "I want to schedule a meeting that happens quarterly, every Monday at 9 AM on the first week of each quarter. Can you help me with that?",
+    "summary": "Quarterly Morning Meeting - First Week of Each Quarter",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref.replace(month=1, day=1) + relativedelta(weekday=MO(1))}T090000",
+      "RRULE": "RRULE:FREQ=YEARLY;BYMONTH=1,4,7,10;BYDAY=MO;BYSETPOS=1"
+    }
+  },
+  {
+    "user_request": "Q2 w3 tuesday 10am",
+    "summary": "Quarter 2 Week 3 Tuesday 10 AM Meeting",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(month=4, day=1) + relativedelta(weekday=TU(3))}T100000"
+    }
+  },
+  {
+    "user_request": "Please schedule an event for the last sunday of every month. I would like to mention that I can also say it as 'every last sun', 'last sunday each month', or similar variations.",
+    "summary": "Monthly Sunday Event",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(day = 31, weekday=SU(-1))}",
+      "RRULE": "RRULE:FREQ=MONTHLY;BYDAY=-1SU"
+    }
+  },
+  {
+    "user_request": "aug 9th 7pm rem 1hr",
+    "summary": "Event on August 9th at 7 PM with a recurring reminder of 1 hour",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(day=9, month=8)}T190000",
+      "VALARM": "VALARM:TRIGGER:-PT1H"
+    }
+  },
+  {
+    "user_request": "last sun feb 0800 2hrs",
+    "summary": "Event on Last Sunday in February at 08:00 lasting 2 hours",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(month=2, day=31, weekday=SU(-1))}T080000",
+      "DURATION": "DURATION:PT2H"
+    }
+  },
+  {
+    "user_request": "last fri of june 1pm",
+    "summary": "June Event on Last Friday at 1 PM",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(month=6, day=31, weekday=FR(-1))}T130000"
+    }
+  },
+  {
+    "user_request": {
+      "text": "I want to schedule an event in 4 hours.",
+      "variations": [
+        "Can you set up something for me in four hours?",
+        "I need to plan an activity for in four hours from now.",
+        "Let's book a spot for later this afternoon, specifically in about 4 hours."
+      ]
+    },
+    "summary": {
+      "title": "Event Scheduled In 4 Hours"
+    },
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(hours=4)}"
+    }
+  },
+  {
+    "user_request": "I need to schedule an event at GMT+1 1200. I will be typing the date and time as 'GMT+1 12:00' or saying 'At 12 o'clock noon in Central European Time'.",
+    "summary": "Event scheduled for Noon GMT+1",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(hour=12)}T120000",
+      "TZOFFSETFROM": "TZOFFSETFROM:+0000",
+      "TZOFFSETTO": "TZOFFSETTO:+0100"
+    }
+  },
+  {
+    "user_request": "I need to schedule a meeting using EST+5 time zone. Can you help me set it up on Friday, October 13 at 7 PM or I can also use 19:00 on the same day?",
+    "summary": "Meeting Scheduled for Friday, October 13 at 7 PM EST+5",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(hour=5)}T050000",
+      "TZOFFSETFROM": "TZOFFSETFROM:-0500",
+      "TZOFFSETTO": "TZOFFSETTO:-0400"
+    }
+  },
+  {
+    "user_request": "I want to schedule a meeting '2:38pm in hawaii'. Can you please help with that? Also, could you suggest something like 'lunch date' as a summary for the event?",
+    "summary": "Lunch Date at 2:38 PM Hawaiian Time",
+    "icalendar_data": {
+      "DTSTART": "DTSTART;TZID=Pacific/Honolulu:{ref + relativedelta(hour=14, minute=38)}T143800"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event at 8pm EST. Can you help me with that?",
+    "summary": "Evening Event - 8 PM EST",
+    "icalendar_data": {
+      "DTSTART": "DTSTART;TZID=America/New_York:{ref + relativedelta(hour=20)}T200000"
+    }
+  },
+  {
+    "user_request": {
+      "variations": [
+        "I need to schedule an event at 9:19am in Madrid time.",
+        "Please book an event for 9:19 AM Madrid time.",
+        "Could you arrange a meeting for 9:19 am GMT+1?",
+        "I want to set up an event for 9:19am Central European Time (CET).",
+        "Schedule a session at 9:19 in the morning, Madrid."
+      ]
+    },
+    "summary": {
+      "title": "Event at 9:19 AM Madrid Time"
+    },
+    "icalendar_data": {
+      "DTSTART": "DTSTART;TZID=Europe/Madrid:{ref + relativedelta(hour=9, minute=19)}"
+    }
+  },
+  {
+    "user_request": "I need to schedule an event at 2pm Chile time. I'm not sure of the exact date yet, but I'll confirm it later.",
+    "summary": "Event scheduled for 2PM Chile Time",
+    "icalendar_data": {
+      "DTSTART": "DTSTART;TZID=America/Santiago:{ref + relativedelta(hour=14)}T140000",
+      "TZOFFSETFROM": "TZOFFSETTO:+0800"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event at 1745+0800. Can you help me with that? I might also say it as '17:45+08:00' or simply '5:45 PM UTC+8'.",
+    "summary": "Event Scheduling for 1745 Hours in UTC+8",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(hour=17, minute=45)}T174500"
+    }
+  },
+  {
+    "user_request": "Schedule an event on '3 jan 2pm 1hr' in various formats",
+    "summary": "Event on January 3rd from 2 PM to 3 PM",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(day=3, month=1)}T140000",
+      "DURATION": "DURATION:PT1H"
+    }
+  },
+  {
+    "user_request": "every mon 0700 45mins",
+    "summary": "Daily Morning Session at 07:00 AM on Mondays every week",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=MO(1))}T070000",
+      "DURATION": "DURATION:PT45M"
+    }
+  },
+  {
+    "user_request": "fri night 8pm till 10:30",
+    "summary": "Friday Evening Event from 8 PM to 10:30 PM",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=FR(1))}T200000",
+      "DTEND": "DTEND:{ref + relativedelta(weekday=FR(1))}T223000"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event every Tuesday unless it falls on the first week of the month. Please suggest a way to type and say this date and time.",
+    "summary": "Monthly Tuesday Event Excluding First Week",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=TU(1))}",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=TU;EXDATE:{ref + relativedelta(day=1,weekday=TU(1))}"
+    }
+  },
+  {
+    "user_request": "Every other Saturday from 10 PM to 12 AM",
+    "summary": "Biweekly Nightly Gathering",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=SA(1))}T100000",
+      "DTEND": "DTEND:{ref + relativedelta(weekday=SA(1))}T120000",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=SA;INTERVAL=2"
+    }
+  },
+  {
+    "user_request": "Schedule an event every 20 minutes from 3 to 4 pm",
+    "summary": "Evening Interval Session",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(hour=15)}T150000",
+      "RRULE": "RRULE:FREQ=MINUTELY;INTERVAL=20;UNTIL:{ref + relativedelta(hour=16)}"
+    }
+  },
+  {
+    "user_request": "I need to set up an event that repeats every 15 minutes from 4 PM to 6 PM on weekdays. Can you help me with that?",
+    "summary": "Recurring Event: Every 15 Minutes from 1600-1800 on Weekdays",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta( weekday = MO|TU|WE|TH|FR)}T160000",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYMINUTE=0,15,30,45"
+    }
+  },
+  {
+    "user_request": "1033 then every 20m until 5pm weekdays",
+    "summary": "Recurring Event at 10:33 AM Every 20 Minutes Until 5 PM Weekdays",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta( weekday = MO|TU|WE|TH|FR)}T103300",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR={range(10, 17)};BYMINUTE=13,33,53;"
+    }
+  },
+  {
+    "user_request": "Schedule an event in 10m",
+    "summary": "Meeting in 10 Minutes",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(minutes=10)}"
+    }
+  },
+  {
+    "user_request": "wkly 7pm mon",
+    "summary": "Weekly Event at 7 PM on Mondays",
+    "description": "This is a weekly recurring event scheduled every Monday at 7 PM. It provides a consistent schedule for participants to attend, ensuring that everyone can plan accordingly. The event aims to foster regular interactions and discussions among members, keeping the community engaged throughout the week.",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=MO(1))}T190000",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=MO;"
+    }
+  },
+  {
+    "user_request": "15 past the hour every hour from 9-5pm weekdays",
+    "description": "This event is scheduled to occur at 15 minutes past each hour, starting from 9:15 AM and ending at 5:15 PM. The event will take place on all weekdays.",
+    "summary": "Event Occurring At 15 Past Each Hour From 9 To 5 Weekdays",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta( weekday = MO|TU|WE|TH|FR)}T091500",
+      "RRULE": "RRULE:FREQ=HOURLY;BYMINUTE=15;COUNT={17-9};"
+    }
+  },
+  {
+    "user_request": "Schedule an event every 5 days from now except last 2 weeks of February. Please provide various ways of typing and saying the date and time.",
+    "summary": "Event Schedule: Every 5 Days Excluding Last Two Weeks of February",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(days=5)}",
+      "RRULE": "RRULE:FREQ=DAILY;INTERVAL=5;EXDATE:{ref + relativedelta(month=2, day=28, weekday=TU(-2))}"
+    }
+  },
+  {
+    "user_request": "weekly from 9am today til 5pm in 2 fridays",
+    "summary": "Weekly Event Schedule: Morning to Afternoon",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref}T090000",
+      "RRULE": "RRULE:FREQ=WEEKLY;UNTIL:{ref + relativedelta(weekday=FR(2), hour=17)}"
+    }
+  },
+  {
+    "user_request": "weekly on friday from 18 jun til 20 oct",
+    "summary": "Weekly Friday Event from June 18th to October 20th",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=FR(1), month=6, day=18)}",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=FR;UNTIL:{ref + relativedelta(month=10, day=20)}"
+    }
+  },
+  {
+    "user_request": "I need to schedule an event every 2 days for 10 weeks. I want options on how it could be said or typed.",
+    "summary": "Weekly Check-In Event Schedule",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(days=2)}",
+      "RRULE": "RRULE:FREQ=DAILY;INTERVAL=2;UNTIL:{ref + relativedelta(weeks=10)}"
+    }
+  },
+  {
+    "user_request": "3pm tuesdays for 2mo",
+    "summary": "Monthly Tuesday Afternoon Meetings from March",
+    "description": "This event is scheduled for every Tuesday at 3 PM, starting in March and continuing for two months. This recurring meeting pattern ensures regular communication and updates between the participants throughout spring.",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=TU(1))}T150000",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=TU;UNTIL:{ref + relativedelta(months=2)}"
+    }
+  },
+  {
+    "user_request": "I need to schedule an event every other weekend after July 1st. Can you help me with that?",
+    "summary": "Event on Every Other Weekend Starting After July 1st",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(month=7, day=1)}",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=SA,SU;INTERVAL=2"
+    }
+  },
+  {
+    "user_request": "I need to schedule an event 'every 2nd weekday'. Can you help me with that? Here are a few ways I might express the time and date: next Tuesday at 10 AM, every other Monday starting from October 3rd at 9 PM, or any Friday except for the first one of each month.",
+    "summary": "Scheduled Event Every Second Weekday",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=MO(1))}",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=TU,WE,TH;INTERVAL=2"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event every 2nd weekend. Can you help me with that?",
+    "summary": "Event Scheduled Every Second Weekend",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=SA(1))}",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=SA,SU;INTERVAL=2"
+    }
+  },
+  {
+    "user_request": "every tu for 10 times",
+    "summary": "Event Schedule: Weekly Tuesday Occurrence for Ten Times",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=TU(1))}",
+      "RRULE": "RRULE:FREQ=WEEKLY;BYDAY=TU;COUNT={10}"
+    }
+  },
+  {
+    "user_request": "I need to set up an event that happens every other day for a total of 19 times. Please suggest different ways I can specify the dates and times, including various formats.",
+    "summary": "Every Other Day Event - 19 Occurrences",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(days=2)}",
+      "RRULE": "RRULE:FREQ=DAILY;INTERVAL=2;COUNT={19}"
+    }
+  },
+  {
+    "user_request": "I want to schedule a daily event starting at 8 AM every day.",
+    "summary": "Daily Morning Event @ 8 AM",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(hour=8)}",
+      "RRULE": "RRULE:FREQ=DAILY"
+    }
+  },
+  {
+    "user_request": "halloween 9pm",
+    "summary": "Halloween Event at 9 PM",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(month=10, day=31)}T210000"
+    }
+  },
+  {
+    "user_request": {
+      "christmas eve 2pm": "User scheduling a meeting or gathering on Christmas Eve at 2 PM",
+      "alternate_typed_requests": [
+        "december 24th, 14:00",
+        "xmas eve @ 2 pm",
+        "24th december 2 pm appointment"
+      ],
+      "alternate_spoken_requests": [
+        "I want to schedule a meeting for Christmas Eve, two in the afternoon.",
+        "Can I book something on December 24th at 2 PM?",
+        "I need to arrange an event for December 24th, two o'clock."
+      ]
+    },
+    "summary": {
+      "title": "Christmas Eve Afternoon Meeting"
+    },
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(month=12, day=24)}T140000"
+    }
+  },
+  {
+    "user_request": "I want to schedule a meeting every Christmas Eve. Please set it up for 7 PM.",
+    "summary": "Christmas Eve Meeting at 19:00",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(month=12, day=24)}",
+      "RRULE": "RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=24"
+    }
+  },
+  {
+    "user_request": "sat 9am, sun 10am, tue 330pm remind 15m before",
+    "summary": "Weekend and Midday Meetup with Alert",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(weekday=SA(1))}T090000",
+      "RDATE": "RDATE:{ref + relativedelta(weekday=SU(1))}T100000; RDATE:{ref + relativedelta(weekday=TU(1))}T153000",
+      "VALARM": "VALARM:TRIGGER:-PT15M"
+    }
+  },
+  {
+    "user_request": "every 3rd sat of month 9am",
+    "summary": "Monthly Morning Meeting on the Third Saturday at 9 AM",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(day=1, weekday=SA(3))}T090000",
+      "RRULE": "RRULE:FREQ=MONTHLY;BYDAY=SA;BYSETPOS=3"
+    }
+  },
+  {
+    "user_request": "Schedule an event for the last weekend of the month at 10am.",
+    "summary": "Last Weekend Morning Event",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(day=31, weekday=SU(-1)|SA(-1))}T100000"
+    }
+  },
+  {
+    "user_request": "I need to schedule an event for the last workday of every month at 10am.",
+    "summary": "Monthly 10 AM Meeting - Last Workday of Each Month",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref + relativedelta(day=31, weekday=FR(-1)|TH(-1)|TU(-1)|WE(-1)|MO(-1))}T100000",
+      "RRULE": "RRULE:FREQ=MONTHLY;BYDAY=MO,TU,WE,TH,FR;BYSETPOS=-1"
+    }
+  },
+  {
+    "user_request": "3rd sat of this month 1035",
+    "summary": "Third Saturday Event at 10:35 AM",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref.replace(day=1) + relativedelta(weekday=SA(3))}T103500"
+    }
+  },
+  {
+    "user_request": "sem 1 week 3 tues 1010",
+    "summary": "Seminar Week 3 Tuesday 10:10 AM",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref.replace(month=9, day=15) + relativedelta(weekday=TU(3))}T101000"
+    }
+  },
+  {
+    "user_request": "week 5 tues 1149-1300",
+    "summary": "Event Schedule for Week 5 Tuesday from 11:49 AM to 1:00 PM",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref - relativedelta(weeks=2, weekday=MO(-1)) + relativedelta(weekday=TU(5))}T114900",
+      "DTEND": "DTEND:{ref - relativedelta(weeks=2, weekday=MO(-1)) + relativedelta(weekday=TU(5))}T130000"
+    }
+  },
+  {
+    "user_request": "I want to schedule a meeting in fiscal week 32 on Wednesday at 1530 hours.",
+    "summary": "Meeting in Week 32, Wednesdays, 1530",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref.replace(month=4, day=5) + relativedelta(weekday=WE(32))}T153000"
+    }
+  },
+  {
+    "user_request": "I want to schedule an event for the first Monday of FY28. Can you help me with that? I would also like to set it up around 9 AM on that day.",
+    "summary": "First Mon AM Meeting FY28",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref.replace(year=2028, month=4, day=1) + relativedelta(weekday=MO(1))}"
+    }
+  },
+  {
+    "user_request": "every second wed of this fiscal year",
+    "summary": "Bi-weekly Wednesday Events for This Fiscal Year",
+    "icalendar_data": {
+      "DTSTART": "DTSTART:{ref.replace(month=1, day=1) + relativedelta(weekday=WE(2))}"
+    }
+  }
+]

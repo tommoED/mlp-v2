@@ -1,0 +1,4 @@
+1030 mon, wed & sat 3h
+DTSTART:{ref + reldate(weekday=MO(1))}T103000
+DURATION:PT3H
+RRULE:FREQ=WEEKLY;BYDAY=MO,WE,SA

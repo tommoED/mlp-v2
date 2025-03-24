@@ -1,0 +1,3 @@
+for 3hrs
+DTSTART:{ref}
+DURATION:PT3H
